@@ -1,0 +1,57 @@
+.mainContent {
+    background-image: url("/homePageImage.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $third-color;
+    
+    a {
+        color: rgb(118, 179, 118);
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(166, 255, 166);
+        }
+    }
+}
+
+.imagemPerfil {
+    min-width: 300px;
+    min-height: 300px;
+
+    span {
+        min-height: 300px;
+        min-width: 300px;
+        border-radius: 50px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+    }
+}
+
+.description {
+    padding-left: 100px;
+
+    h2 {
+        font-family: $title-font;
+        font-size: 23px;
+    }
+
+    h1 {
+        font-family: $title-font;
+        color: $fourthy-color;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: $regular-text-font;
+        font-size: 20px;
+    }
+}

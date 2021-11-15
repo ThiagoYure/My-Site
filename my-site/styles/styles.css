@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+.footer {
+  background: #33425c;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #E0FBFC;
+  font-family: "Work Sans", sans-serif;
+}
+
+.topInfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+  padding: 40px 50px 0px 50px;
+  gap: 60px;
+}
+
+.aboutSite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  gap: 20px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.aboutText {
+  width: 100%;
+  padding: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #E0FBFC;
+  background: #33425c;
+  text-align: center;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.socialMedia a {
+  text-decoration: none;
+  color: #E0FBFC;
+  display: block;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.socialMedia a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "Holtwood One SC", serif;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  min-width: 150px;
+  padding: 10px;
+  color: #6a7588;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  text-align: center;
+  background: #252e3f;
+}
+
+.links a:hover {
+  background: #76a0b8;
+  color: #E0FBFC;
+}
+
+.newsLetter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.newsLetter .newsLetterText {
+  text-align: start;
+}
+
+.newsLetter .newsLetterForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.newsLetter .newsLetterForm input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #E0FBFC;
+  background: #33425c;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  color: #E0FBFC;
+  font-weight: bold;
+}
+
+.newsLetter .newsLetterForm input:focus {
+  background: #E0FBFC;
+  color: #302130;
+  outline: none;
+}
+
+.newsLetter .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.newsLetter .buttons a {
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #E0FBFC;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+
+.newsLetter .buttons a:hover {
+  background: #76a0b8;
+  border-color: #76a0b8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 61.29px;
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.bottomInfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  background: #302130;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #33425c;
+  font-family: "Holtwood One SC", serif;
+  width: 100%;
+  height: 75px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navBar .icone {
+  width: 45px;
+}
+
+.navBar .icone a {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.navBar .icone a :hover {
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.534);
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.534);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  padding: 30px;
+  color: #6a7588;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.menu a:hover {
+  background: #76a0b8;
+  color: #E0FBFC;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #1a2b3f;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.mainContent {
+  background-image: url("/homePageImage.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #E0FBFC;
+}
+
+.mainContent a {
+  color: #76b376;
+  text-decoration: none;
+}
+
+.mainContent a:hover {
+  color: #a6ffa6;
+}
+
+.imagemPerfil {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.imagemPerfil span {
+  min-height: 300px;
+  min-width: 300px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+.description {
+  padding-left: 100px;
+}
+
+.description h2 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 23px;
+}
+
+.description h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #EE6C4D;
+  font-size: 50px;
+}
+
+.description p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
