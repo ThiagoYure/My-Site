@@ -20,7 +20,7 @@ const Blog = ({ posts }) => {
                                 <div className="post" key={post.metadata.slug}>
                                     <Link href={`./posts/${post.metadata.slug}`}>
                                         <a>
-                                            <Image src={post.metadata.banner} alt="/BlogPageBanner"/>
+                                            <Image src={post.metadata.banner} alt="/BlogPageBanner" width="300" height="300" layout="responsive"/>
                                             <div className="postMetadata">
                                                 <div className="titlePostit">{post.metadata.title}</div>
                                                 <div className="resumePostit">{post.metadata.excerpt}</div>

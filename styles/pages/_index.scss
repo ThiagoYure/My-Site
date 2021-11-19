@@ -25,13 +25,10 @@
 }
 
 .imagemPerfil {
-    min-width: 300px;
-    min-height: 300px;
+    width: 1000px;
 
-    img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50px;
+    span {
+        border-radius: 30px;
         box-shadow: 0 0 15px rgb(0, 0, 0);
     }
 }

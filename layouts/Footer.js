@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare, faLinkedin, faBehanceSquare, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +12,7 @@ const Footer = () => {
                     <div className="logo">
                         <Link href="/">
                             <a>
-                                <img src="/Thiago Logo 3.png" alt="Logo"/>
+                                <Image src="/Thiago Logo 3.png" alt="Logo" width="270" height="100" layout="responsive"/>
                             </a>
                         </Link>
                     </div>

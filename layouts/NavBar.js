@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NavBar = () => {
     return (
@@ -6,7 +7,7 @@ const NavBar = () => {
             <div className="icone">
                 <Link href="/">
                     <a>
-                        <img src="/Thiago Icone.png" alt="Ícone"/>
+                        <Image src="/Thiago Icone.png" alt="Ícone" width="300" height="300" layout="responsive"/>
                     </a>
                 </Link>
             </div>

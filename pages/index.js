@@ -56,7 +56,7 @@ export default function App() {
       <div>
         <div className="mainContent">
           <div className="imagemPerfil">
-            <Image src="/FotoPerfil.png" alt="Imagem de Perfil"/>
+            <Image src="/FotoPerfil.png" alt="Imagem de Perfil" width="300" height="300" layout="responsive"/>
           </div>
           <div className="descriptionMain">
             <h1>Thiago Yure</h1>
