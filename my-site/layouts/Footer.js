@@ -17,7 +17,8 @@ export default () => {
                         </Link>
                     </div>
                     <div className="aboutText">
-                        Esse site foi construído com o intuito de colocar em prática as habilidades aprendidas durante a minha vida de programador.
+                        Este site é feito com uma pitada de tempero, amor e tudo que há de bom, sem esquecer do ingrediente X.
+                        Aqui você vai encontrar tudo de relevante sobre mim e  mais um pouco. Fique à vontade e sinta-se em casa.
                     </div>
                     <div className="socialMedia">
                         <Link href="https://github.com/ThiagoYure">
