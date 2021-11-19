@@ -11,6 +11,11 @@
     padding-left: 20px;
     .icone {
         width: 45px;
+
+        img {
+            width: 100%;
+        }
+
         a {
             transition: all ease-in 0.5s;
             & :hover {

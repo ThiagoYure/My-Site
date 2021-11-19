@@ -1,13 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
 
-export default () => {
+const NavBar = () => {
     return (
         <div id="top" className="navBar">
             <div className="icone">
                 <Link href="/">
                     <a>
-                        <Image src="/Thiago Icone.png" height="40" width="40" layout="responsive" />
+                        <img src="/Thiago Icone.png" alt="Ícone"/>
                     </a>
                 </Link>
             </div>
@@ -31,3 +30,5 @@ export default () => {
         </div>
     );
 }
+
+export default NavBar;

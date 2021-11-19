@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from 'next/image';
 import ItemCard from "../components/ItemCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin, faBehanceSquare, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
@@ -49,14 +49,14 @@ export default function App() {
     return () => {
       window.removeEventListener('scroll', scrollListener);
     }
-  }, []);
+  });
 
   return (
     <>
       <div>
         <div className="mainContent">
           <div className="imagemPerfil">
-            <Image src="/FotoPerfil.png" height="200" width="200" layout="intrinsic" />
+            <Image src="/FotoPerfil.png" alt="Imagem de Perfil"/>
           </div>
           <div className="descriptionMain">
             <h1>Thiago Yure</h1>
@@ -72,7 +72,7 @@ export default function App() {
         <div className="skills">
           <div className="descriptionSkills" data-animation="fade-in">
             <h1>Superpoderes</h1>
-            <h2>" Com grandes poderes vêm grandes <span className="destaque">responsabilidades</span>. "</h2>
+            <h2>&#34; Com grandes poderes vêm grandes <span className="destaque">responsabilidades</span>. &#34;</h2>
           </div>
           <div className="skillsList" data-animation="fade-in">
             <ItemCard infos={{ skill: "Criatividade Super-Humana", icon: faDragon, color: "#14262e" }} />
@@ -107,7 +107,7 @@ export default function App() {
           <div className="descriptionPersonalProjects" data-animation="fade-in">
             <div>
               <h1>A Evolução</h1>
-              <h2>"Posso falhar, mas não vou desistir"</h2>
+              <h2>&#34;Posso falhar, mas não vou desistir&#34;</h2>
               <h2>Ryze(League of Legends)</h2>
               <p>
                 Estou buscando me firmar no mercado de trabalho e continuar evoluindo.
@@ -122,7 +122,7 @@ export default function App() {
           <div className="descriptionPersonalBlog" data-animation="fade-in">
             <div>
               <h1>Eu, eu mesmo e Thiago</h1>
-              <h2>"A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria estrada."</h2>
+              <h2>&#34;A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria estrada.&#34;</h2>
               <h2>Bob Dylan</h2>
               <p>
                 Como eu me defino? Como alguém que ama filmes, séries, jogos, música(muita música), rpg,

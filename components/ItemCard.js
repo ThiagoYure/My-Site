@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default ({infos}) => {
+const ItemCard = ({infos}) => {
     return (
         <div className="itemCard" style={{background:""+infos.color}}>
             <div className="icone"><FontAwesomeIcon icon={infos.icon}/></div>
@@ -8,3 +8,5 @@ export default ({infos}) => {
         </div>
     );
 }
+
+export default ItemCard;

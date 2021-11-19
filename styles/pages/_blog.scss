@@ -50,10 +50,6 @@
     flex-wrap: wrap;
     gap: 60px;
 
-    span {
-        display: flex !important;
-    }
-
     a {
         text-decoration: none;
         color: $third-color;
@@ -63,6 +59,12 @@
 
 .post {
     box-shadow: -5px 5px 20px #0d0814;
+    width: 20%;
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
 }
 
 .postMetadata {

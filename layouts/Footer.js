@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare, faLinkedin, faBehanceSquare, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 
-export default () => {
+const Footer = () => {
     return (
         <footer className="footer">
             <div className="topInfos">
@@ -12,7 +11,7 @@ export default () => {
                     <div className="logo">
                         <Link href="/">
                             <a>
-                                <Image src="/Thiago Logo 3.png" height="123" width="300" layout="intrinsic" />
+                                <img src="/Thiago Logo 3.png" alt="Logo"/>
                             </a>
                         </Link>
                     </div>
@@ -87,3 +86,5 @@ export default () => {
         </footer>
     );
 }
+
+export default Footer;

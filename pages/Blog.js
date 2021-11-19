@@ -1,11 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import fs from 'fs';
 import grayMatter from 'gray-matter';
 import { remark } from 'remark';
 import remarkHTML from 'remark-html';
+import Image from 'next/image';
 
-export default ({ posts }) => {
+const Blog = ({ posts }) => {
     return (
         <>
             <div>
@@ -20,7 +20,7 @@ export default ({ posts }) => {
                                 <div className="post" key={post.metadata.slug}>
                                     <Link href={`./posts/${post.metadata.slug}`}>
                                         <a>
-                                            <Image src={post.metadata.banner} alt="/BlogPageBanner" height="200" width="200" layout="intrinsic" />
+                                            <Image src={post.metadata.banner} alt="/BlogPageBanner"/>
                                             <div className="postMetadata">
                                                 <div className="titlePostit">{post.metadata.title}</div>
                                                 <div className="resumePostit">{post.metadata.excerpt}</div>
@@ -67,3 +67,5 @@ export async function getStaticProps() {
         }
     };
 }
+
+export default Blog;

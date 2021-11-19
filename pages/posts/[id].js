@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import fs from 'fs';
 import grayMatter from 'gray-matter';
 import { remark } from 'remark';
 import remarkHTML from 'remark-html';
 
-export default ({ post }) => {
+const Post = ({ post }) => {
     console.log(post);
     return (
         <div>
@@ -55,3 +54,5 @@ export async function getStaticProps({ params }) {
 
     return { props: { post } };
 }
+
+export default Post;
