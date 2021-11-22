@@ -18,9 +18,9 @@ const Blog = ({ posts }) => {
                         {posts.map((post) => {
                             return (
                                 <div className="post" key={post.metadata.slug}>
-                                    <Link href={`./posts/${post.metadata.slug}`}>
+                                    <Link href={`/posts/${post.metadata.slug}`}>
                                         <a>
-                                            <Image src={post.metadata.banner} alt="/img/BlogPageBanner.jpg" width="300" height="300" layout="responsive"/>
+                                            <Image src={post.metadata.banner} alt="Blog Image" width="300" height="300" layout="responsive" />
                                             <div className="postMetadata">
                                                 <div className="titlePostit">{post.metadata.title}</div>
                                                 <div className="resumePostit">{post.metadata.excerpt}</div>
