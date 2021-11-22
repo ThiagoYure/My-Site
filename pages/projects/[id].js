@@ -1,36 +1,35 @@
-import Link from "next/link";
 import fs from 'fs';
 import grayMatter from 'gray-matter';
 import { remark } from 'remark';
 import remarkHTML from 'remark-html';
 
-const Post = ({ post }) => {
-    console.log(post);
+const Project = ({ project }) => {
+    console.log(project);
     return (
         <div>
-            <div className="postBanner" style={{
+            <div className="projectBanner" style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "20px",
-                backgroundImage: `url(${post.metadata.banner})`,
+                backgroundImage: `url(${project.metadata.banner})`,
                 backgroundPosition: "center top",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 }}>
-                <div className="postTitle">{post.metadata.title}</div>
-                <div className="postDate">{post.metadata.date}</div>
+                <div className="postTitle">{project.metadata.name}</div>
+                <div className="postDate">{project.metadata.date}</div>
             </div>
-            <div class="postContent" dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div class="postContent" dangerouslySetInnerHTML={{ __html: project.content }} />
         </div>
     );
 }
 
 export async function getStaticPaths() {
-    const allPostsFileNames = fs.readdirSync('./posts');
+    const allProjectsFileNames = fs.readdirSync('./projects');
 
-    const paths = allPostsFileNames.map((filename) => ({
+    const paths = allProjectsFileNames.map((filename) => ({
         params: { id: filename.replace(".md", "") },
     }))
 
@@ -38,13 +37,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const fileContent = fs.readFileSync(`./posts/${params.id + ".md"}`, 'utf-8');
+    const fileContent = fs.readFileSync(`./projects/${params.id + ".md"}`, 'utf-8');
     const { content, data: metadata } = grayMatter(fileContent);
     const htmlContent = remark()
         .use(remarkHTML)
         .processSync(content)
         .toString();
-    const post = {
+    const project = {
         metadata: {
             ...metadata,
             slug: params.id,
@@ -52,7 +51,7 @@ export async function getStaticProps({ params }) {
         content: htmlContent
     };
 
-    return { props: { post } };
+    return { props: { project } };
 }
 
-export default Post;
+export default Project;

@@ -343,9 +343,12 @@
           box-sizing: border-box;
 }
 
+@-ms-viewport {
+  width: device-width;
+}
+
 body {
   background: #1a2b3f;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   left: 0;
@@ -812,7 +815,7 @@ body {
           justify-content: flex-start;
   width: 100%;
   border-bottom-color: #E0FBFC;
-  border-bottom-width: 5px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
 }
 
@@ -903,7 +906,49 @@ body {
   font-weight: bold;
   color: #E0FBFC;
   background: #EE6C4D;
-  padding: 6px;
-  border-radius: 5px;
+  padding: 6px 20px 6px 20px;
+}
+
+.postContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  color: #E0FBFC;
+}
+
+.postContent h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 30px;
+  color: #E0FBFC;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-color: #E0FBFC;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding: 0 0 20px 0;
+}
+
+.postContent p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

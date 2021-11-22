@@ -7,7 +7,7 @@ export default ({ children }) => {
         <>
             <Head>
                 <title>Thiago Yure</title>
-                <meta name="description" content="That's Thiago's site" />
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="Icon" href="Thiago-Icone.ico" />
             </Head>
             <NavBar />

@@ -2,9 +2,12 @@
     box-sizing: border-box;
 }
 
+@-ms-viewport {
+    width: device-width;
+}
+
 body {
     background: $primary-color;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
     left: 0;

@@ -33,7 +33,7 @@
     justify-content: flex-start;
     width: 100%;
     border-bottom-color: $third-color;
-    border-bottom-width: 5px;
+    border-bottom-width: 2px;
     border-bottom-style: solid;
 
     h2 {
@@ -90,22 +90,4 @@
         margin-bottom: 5px;
         font-size: 15px;
     }
-}
-
-.postTitle {
-    font-family: $title-font;
-    margin-bottom: 20px;
-    font-size: 50px;
-    color: $fourthy-color;
-    text-shadow: 1px 4px 3px black;
-}
-
-.postDate {
-    font-family: $regular-text-font;
-    font-size: 15px;
-    font-weight: bold;
-    color: $third-color;
-    background: $fourthy-color;
-    padding: 6px;
-    border-radius: 5px;
 }
