@@ -7,7 +7,7 @@ const NavBar = () => {
             <div className="icone">
                 <Link href="/">
                     <a>
-                        <Image src="/Thiago Icone.png" alt="Ícone" width="300" height="300" layout="responsive"/>
+                        <Image src="/img/Thiago Icone.png" alt="Ícone" width="300" height="300" layout="responsive"/>
                     </a>
                 </Link>
             </div>
