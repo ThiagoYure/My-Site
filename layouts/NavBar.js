@@ -24,7 +24,7 @@ const NavBar = () => {
                 </div>
                 <div>
                     <Link href="/Projects">
-                        <a>Projects</a>
+                        <a>Projetos</a>
                     </Link>
                 </div>
             </div>

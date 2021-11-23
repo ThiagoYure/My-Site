@@ -14,7 +14,7 @@ const Projects = ({ projects }) => {
                 </div>
                 <div className="projectsContent">
                     <div className="titleProjects"><h2>Últimos Projetos</h2></div>
-                    <div className="projectList">
+                    <div className="projectsList">
                         {projects.map((project) => {
                             return (
                                 <div className="project" key={project.metadata.slug}>
@@ -24,7 +24,7 @@ const Projects = ({ projects }) => {
                                             <div className="projectMetadata">
                                                 <div className="titleProjectMini">{project.metadata.name}</div>
                                                 <div className="resumeProjectMini">{project.metadata.excerpt}</div>
-                                                <div className="datePostit">{project.metadata.date}</div>
+                                                <div className="dateProjectMini">{project.metadata.date}</div>
                                             </div>
                                         </a>
                                     </Link>

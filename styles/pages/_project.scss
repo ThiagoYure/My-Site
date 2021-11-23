@@ -1,0 +1,55 @@
+.projectBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectTitle {
+    font-family: $title-font;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: $fourthy-color;
+    text-shadow: 1px 4px 3px black;
+}
+
+.projectDate {
+    font-family: $regular-text-font;
+    font-size: 15px;
+    font-weight: bold;
+    color: $third-color;
+    background: $fourthy-color;
+    padding: 6px 20px 6px 20px;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: $third-color;
+
+    h1 {
+        font-family: $title-font;
+        font-size: 30px;
+        color: $third-color;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-color: $third-color;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        padding: 0 0 20px 0;
+    }
+
+    p {
+        font-family: $regular-text-font;
+        font-size: 20px;
+    }
+}

@@ -59,14 +59,15 @@
 .links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 25px;
     margin-right: 20px;
     flex: 1;
-    font-family: $items-font;
 
     a {
         text-decoration: none;
+        font-family: $items-font;
         font-size: 12px;
         display: block;
         min-width: 150px;

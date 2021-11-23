@@ -1,0 +1,93 @@
+.bannerSectionProjects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("/projectBanner.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+
+    h1 {
+        padding: 20px;
+        font-family: $title-font;
+        color: $fourthy-color;
+        font-size: 80px;
+        text-shadow: 1px 4px 3px black;
+    }
+}
+
+.projectsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.titleProjects {
+    color: $third-color;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom-color: $third-color;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+    h2 {
+        font-family: $regular-text-font;
+    }
+}
+
+.projectsList {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    a {
+        text-decoration: none;
+        color: $third-color;
+        font-family: $regular-text-font;
+    }
+}
+
+.project {
+    box-shadow: -5px 5px 20px #0d0814;
+    width: 20%;
+
+    span {
+        max-width: 100%;
+    }
+}
+
+.projectMetadata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #1e142e;
+    padding: 20px;
+
+    .titleProjectMini {
+        font-family: $title-font;
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: $fourthy-color;
+    }
+
+    .dateProjectMini {
+        font-size: 12px;
+        color: $link-color;
+    }
+
+    .resumeProjectMini {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+}

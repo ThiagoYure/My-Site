@@ -135,20 +135,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 25px;
   margin-right: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-family: "Holtwood One SC", serif;
 }
 
 .links a {
   text-decoration: none;
+  font-family: "Holtwood One SC", serif;
   font-size: 12px;
   display: block;
   min-width: 150px;
@@ -892,6 +894,26 @@ body {
   font-size: 15px;
 }
 
+.postBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .postTitle {
   font-family: "Merriweather Sans", sans-serif;
   margin-bottom: 20px;
@@ -948,6 +970,217 @@ body {
 }
 
 .postContent p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.bannerSectionProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  background-image: url("/projectBanner.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+.bannerSectionProjects h1 {
+  padding: 20px;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #EE6C4D;
+  font-size: 80px;
+  text-shadow: 1px 4px 3px black;
+}
+
+.projectsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.titleProjects {
+  color: #E0FBFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  border-bottom-color: #E0FBFC;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.titleProjects h2 {
+  font-family: "Work Sans", sans-serif;
+}
+
+.projectsList {
+  width: 100%;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
+}
+
+.projectsList a {
+  text-decoration: none;
+  color: #E0FBFC;
+  font-family: "Work Sans", sans-serif;
+}
+
+.project {
+  -webkit-box-shadow: -5px 5px 20px #0d0814;
+          box-shadow: -5px 5px 20px #0d0814;
+  width: 20%;
+}
+
+.project span {
+  max-width: 100%;
+}
+
+.projectMetadata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #1e142e;
+  padding: 20px;
+}
+
+.projectMetadata .titleProjectMini {
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #EE6C4D;
+}
+
+.projectMetadata .dateProjectMini {
+  font-size: 12px;
+  color: #6a7588;
+}
+
+.projectMetadata .resumeProjectMini {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.projectBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectTitle {
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #EE6C4D;
+  text-shadow: 1px 4px 3px black;
+}
+
+.projectDate {
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #E0FBFC;
+  background: #EE6C4D;
+  padding: 6px 20px 6px 20px;
+}
+
+.projectContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  color: #E0FBFC;
+}
+
+.projectContent h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 30px;
+  color: #E0FBFC;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-color: #E0FBFC;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding: 0 0 20px 0;
+}
+
+.projectContent p {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
 }

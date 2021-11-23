@@ -9,20 +9,12 @@ const Post = ({ post }) => {
     return (
         <div>
             <div className="postBanner" style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "20px",
                 backgroundImage: `url(${post.metadata.banner})`,
-                backgroundPosition: "center top",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
                 }}>
                 <div className="postTitle">{post.metadata.title}</div>
                 <div className="postDate">{post.metadata.date}</div>
             </div>
-            <div class="postContent" dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div className="postContent" dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
     );
 }

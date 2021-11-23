@@ -8,20 +8,12 @@ const Project = ({ project }) => {
     return (
         <div>
             <div className="projectBanner" style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: "20px",
                 backgroundImage: `url(${project.metadata.banner})`,
-                backgroundPosition: "center top",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
                 }}>
-                <div className="postTitle">{project.metadata.name}</div>
-                <div className="postDate">{project.metadata.date}</div>
+                <div className="projectTitle">{project.metadata.name}</div>
+                <div className="projectDate">{project.metadata.date}</div>
             </div>
-            <div class="postContent" dangerouslySetInnerHTML={{ __html: project.content }} />
+            <div class="projectContent" dangerouslySetInnerHTML={{ __html: project.content }} />
         </div>
     );
 }
