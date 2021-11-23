@@ -13,7 +13,7 @@ const Project = ({ project }) => {
                 <div className="projectTitle">{project.metadata.name}</div>
                 <div className="projectDate">{project.metadata.date}</div>
             </div>
-            <div class="projectContent" dangerouslySetInnerHTML={{ __html: project.content }} />
+            <div className="projectContent" dangerouslySetInnerHTML={{ __html: project.content }} />
         </div>
     );
 }
