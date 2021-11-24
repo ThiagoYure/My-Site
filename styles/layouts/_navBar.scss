@@ -101,6 +101,7 @@
         display: none;
         overflow: hidden;
         flex-direction: column;
+        padding: 0;
     }
 
     .menuIcon {
@@ -109,12 +110,22 @@
         overflow: visible;
     }
 
+    .menu {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0.5rem;
+        padding-left: 1rem;
+    }
+
     .menuMobile {
         flex-direction: column;
         background: #101318da;
         width: 100%;
         position: absolute;
         top: 4.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding: 0;
 
         div {
             width: 100%;
