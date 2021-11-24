@@ -6,11 +6,20 @@
     background: $fifty-color;
     font-family: $items-font;
     width: 100%;
-    height: 75px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 0.05rem;
+    padding-left: 1rem;
+    z-index: 999;
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .icone {
-        width: 45px;
+        width: 3rem;
 
         span {
             width: 100%;
@@ -19,29 +28,104 @@
         a {
             transition: all ease-in 0.5s;
             & :hover {
-                box-shadow: 0 0 15px rgba(255, 255, 255, 0.534);
+                box-shadow: 0 0 1rem rgba(255, 255, 255, 0.534);
             }
         }
     }
 }
 
-.menu {
+.menuLinks {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 
     a {
         text-decoration: none;
-        font-size: 12px;
+        font-size: 0.75rem;
         display: block;
-        padding: 30px;
+        padding: 1.63rem;
         color: $link-color;
         transition: all ease-in 0.2s;
-    
+
         &:hover {
             background: $secondary-color;
             color: $third-color;
+        }
+    }
+}
+
+.menuIcon {
+    font-size: 1.8rem;
+    color: $link-color;
+    display: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menuMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+
+    a {
+        width: 100%;
+        text-decoration: none;
+        font-size: 0.75rem;
+        display: block;
+        padding: 1.63rem;
+        color: $link-color;
+        transition: all ease-in 0.2s;
+
+        &:hover {
+            background: $secondary-color;
+            color: $third-color;
+        }
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    .navBar {
+        padding-right: 1rem;
+        flex-direction: column;
+        position: fixed;
+    }
+
+    .menuLinks {
+        display: none;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .menuIcon {
+        padding: 0.8rem;
+        display: block;
+        overflow: visible;
+    }
+
+    .menuMobile {
+        flex-direction: column;
+        background: #101318da;
+        width: 100%;
+        position: absolute;
+        top: 4.5rem;
+
+        div {
+            width: 100%;
+        }
+
+        a {
+            color: $link-color;
+            width: inherit;
+            text-align: center;
+
+            &:active {
+                background: $secondary-color;
+                color: $third-color;
+            }
         }
     }
 }

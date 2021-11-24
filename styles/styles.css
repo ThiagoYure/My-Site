@@ -286,13 +286,30 @@
   background: #33425c;
   font-family: "Holtwood One SC", serif;
   width: 100%;
-  height: 75px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0.05rem;
+  padding-left: 1rem;
+  z-index: 999;
+}
+
+.navBar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navBar .icone {
-  width: 45px;
+  width: 3rem;
 }
 
 .navBar .icone span {
@@ -305,11 +322,11 @@
 }
 
 .navBar .icone a :hover {
-  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.534);
-          box-shadow: 0 0 15px rgba(255, 255, 255, 0.534);
+  -webkit-box-shadow: 0 0 1rem rgba(255, 255, 255, 0.534);
+          box-shadow: 0 0 1rem rgba(255, 255, 255, 0.534);
 }
 
-.menu {
+.menuLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,21 +340,109 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: visible;
 }
 
-.menu a {
+.menuLinks a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.75rem;
   display: block;
-  padding: 30px;
+  padding: 1.63rem;
   color: #6a7588;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
 
-.menu a:hover {
+.menuLinks a:hover {
   background: #76a0b8;
   color: #E0FBFC;
+}
+
+.menuIcon {
+  font-size: 1.8rem;
+  color: #6a7588;
+  display: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: visible;
+}
+
+.menuMobile a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 0.75rem;
+  display: block;
+  padding: 1.63rem;
+  color: #6a7588;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.menuMobile a:hover {
+  background: #76a0b8;
+  color: #E0FBFC;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    padding-right: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+  }
+  .menuLinks {
+    display: none;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuIcon {
+    padding: 0.8rem;
+    display: block;
+    overflow: visible;
+  }
+  .menuMobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #101318da;
+    width: 100%;
+    position: absolute;
+    top: 4.5rem;
+  }
+  .menuMobile div {
+    width: 100%;
+  }
+  .menuMobile a {
+    color: #6a7588;
+    width: inherit;
+    text-align: center;
+  }
+  .menuMobile a:active {
+    background: #76a0b8;
+    color: #E0FBFC;
+  }
 }
 
 * {
