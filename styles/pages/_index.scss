@@ -1,18 +1,24 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .mainContent {
+    width: 100%;
     background-image: url("/homePageImage.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    background-blend-mode: multiply;
+    background-color: rgba(90, 33, 95, 0.603);
+    padding: 6.25rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     color: $third-color;
+    gap: 4rem;
 
     a {
         color: rgb(118, 179, 118);
@@ -25,39 +31,38 @@
 }
 
 .imagemPerfil {
-    width: 1000px;
+    padding-top: 2rem;
+    width: 20rem;
 
     span {
-        border-radius: 30px;
-        box-shadow: 0 0 15px rgb(0, 0, 0);
+        border-radius: 1.8rem;
+        box-shadow: 0 0 1rem rgb(0, 0, 0);
     }
 }
 
 .descriptionMain {
-    padding-left: 100px;
+    width: 40rem;
 
     h2 {
         font-family: $title-font;
-        font-size: 23px;
+        font-size: 1.4rem;
     }
 
     h1 {
         font-family: $title-font;
         color: $fourthy-color;
-        font-size: 50px;
+        font-size: 3.2rem;
     }
 
     p {
         font-family: $regular-text-font;
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 }
 
 .skills {
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 30px;
-    padding-bottom: 100px;
+    width: 100%;
+    padding: 2rem 6.25rem 4rem 6.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,13 +80,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-bottom-width: 2px;
+    border-bottom-width: 0.2rem;
     border-bottom-style: solid;
     border-bottom-color: $third-color;
 
     h1 {
         color: $third-color;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-family: $title-font;
         border-color: $fourthy-color;
     }
@@ -93,18 +98,18 @@
 
 .skillsList {
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
+    justify-content: center;
+    margin-top: 0.63rem;
+    column-gap: 3rem;
 }
 
 .abilities {
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 30px;
-    padding-bottom: 120px;
+    width: 100%;
+    padding: 2rem 6.25rem 4rem 6.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,16 +119,16 @@
 }
 
 .descriptionAbilities {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
-    border-bottom-width: 2px;
+    border-bottom-width: 0.2rem;
     border-bottom-style: solid;
     border-bottom-color: $third-color;
 
     h1 {
         color: $third-color;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-family: $title-font;
         border-color: $fourthy-color;
     }
@@ -135,39 +140,39 @@
 
 .abilitiesList {
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
+    justify-content: center;
+    margin-top: 0.63rem;
+    column-gap: 3rem;
 }
 
 .divider {
     display: block;
     width: 100%;
-    height: 6px;
+    height: 0.3rem;
     background: $fifty-color;
 }
 
 .complementation {
+    width: 100%;
     background-position: center top;
+    padding: 2rem 6.25rem 4rem 6.25rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-color: rgba(90, 33, 95, 0.603);
     background-image: url("/secondaryImage.jpg");
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 120px;
-    padding-bottom: 120px;
     display: flex;
     flex-direction: column;
     color: $third-color;
-    width: 100%;
 }
 
 .descriptionPersonalProjects {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -178,26 +183,26 @@
 
     h2 {
         font-family: $title-font;
-        font-size: 23px;
+        font-size: 1.5rem;
     }
 
     h1 {
         font-family: $title-font;
         color: $fourthy-color;
-        font-size: 50px;
+        font-size: 3.2rem;
     }
 
     p {
         font-family: $regular-text-font;
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 
     a {
-        font-size: 15px;
+        font-size: 0.9rem;
         background: $primary-color;
         color: $third-color;
-        padding: 6px 15px 6px 15px;
-        border-radius: 10px;
+        padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+        border-radius: 0.2rem;
         text-decoration: none;
         transition: all ease-in 0.2s;
         font-family: $items-font;
@@ -219,26 +224,26 @@
 
     h2 {
         font-family: $title-font;
-        font-size: 23px;
+        font-size: 1.5rem;
     }
 
     h1 {
         font-family: $title-font;
         color: $fourthy-color;
-        font-size: 50px;
+        font-size: 3.2rem;
     }
 
     p {
         font-family: $regular-text-font;
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 
     a {
-        font-size: 15px;
+        font-size: 0.9rem;
         background: $primary-color;
         color: $third-color;
-        padding: 6px 15px 6px 15px;
-        border-radius: 10px;
+        padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+        border-radius: 0.2rem;
         text-decoration: none;
         transition: all ease-in 0.2s;
         font-family: $items-font;
@@ -273,22 +278,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.9rem;
+    width: 100%;
 
     h1 {
+        text-align: center;
         font-family: $title-font;
         color: $fourthy-color;
-        font-size: 50px;
+        font-size: 3rem;
     }
 }
 
 .socialMediaLinks {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 100px;
-    font-size: 100px;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 4.4rem;
+    margin-top: 1.8rem;
 
     a {
         text-decoration: none;
@@ -301,3 +311,28 @@
         }
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .mainContent {
+       flex-wrap: wrap;
+       gap: 2rem;
+    }
+
+    .descriptionMain {
+        text-align: center;
+    }
+
+    .descriptionPersonalBlog {
+        text-align: center;
+        div {
+            width: 100%;
+        }
+    }
+
+    .descriptionPersonalProjects {
+        text-align: center;
+        div {
+            width: 100%;
+        }
+    }
+} 

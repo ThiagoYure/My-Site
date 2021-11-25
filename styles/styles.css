@@ -58,6 +58,7 @@
 }
 
 .topInfos {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,9 +66,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 30px;
-  padding: 40px 50px 0px 50px;
-  gap: 60px;
+  padding: 2.4rem 3.2rem 2.4rem 3.2rem;
 }
 
 .aboutSite {
@@ -84,25 +83,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 20px;
-  gap: 20px;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  gap: 1.3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .aboutText {
   width: 100%;
-  padding: 30px;
+  padding: 1.7rem;
   border-style: solid;
-  border-width: 2px;
-  border-radius: 10px;
+  border-width: 0.13rem;
+  border-radius: 0.7rem;
   border-color: #E0FBFC;
   background: #33425c;
   text-align: center;
 }
 
 .socialMedia {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,8 +109,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 30px;
-  font-size: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.9rem;
+  font-size: 2rem;
 }
 
 .socialMedia a {
@@ -128,6 +133,7 @@
 }
 
 .links {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,8 +147,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 25px;
-  margin-right: 20px;
+  gap: 1.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -151,10 +156,18 @@
 .links a {
   text-decoration: none;
   font-family: "Holtwood One SC", serif;
-  font-size: 12px;
-  display: block;
-  min-width: 150px;
-  padding: 10px;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 15rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 3rem;
   color: #6a7588;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
@@ -168,6 +181,7 @@
 }
 
 .newsLetter {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,14 +192,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  gap: 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .newsLetter .newsLetterText {
-  text-align: start;
+  text-align: center;
 }
 
 .newsLetter .newsLetterForm {
@@ -196,13 +210,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 1.2rem;
 }
 
 .newsLetter .newsLetterForm input {
   width: 100%;
-  padding: 12px 20px;
-  border-radius: 5px;
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.3rem;
   border-style: solid;
   border-color: #E0FBFC;
   background: #33425c;
@@ -228,12 +242,12 @@
 }
 
 .newsLetter .buttons a {
-  padding: 5px 20px;
-  border-radius: 5px;
+  padding: 0.3rem 1.3rem;
+  border-radius: 0.3rem;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.95rem;
   color: #E0FBFC;
-  border-width: 2px;
+  border-width: 0.15rem;
   border-style: solid;
   cursor: pointer;
   -webkit-transition: all ease-in-out 0.1s;
@@ -248,16 +262,16 @@
 }
 
 .logo {
-  width: 200px;
-  height: 80px;
-  margin-bottom: 10px;
+  width: 12.6rem;
+  height: 5rem;
+  margin-bottom: 0.8rem;
 }
 
 .bottomInfos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px;
+  padding: 0.9rem;
   background: #302130;
   width: 100%;
   -webkit-box-align: center;
@@ -266,7 +280,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 14px;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .topInfos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .links {
+    display: none;
+    overflow: hidden;
+  }
+  .topInfos {
+    gap: 1.7rem;
+  }
 }
 
 .navBar {
@@ -436,7 +469,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #101318;
+    background: #252e3f;
     width: 100%;
     position: absolute;
     top: 4.5rem;
@@ -455,6 +488,13 @@
   .menuMobile a:active {
     background: #76a0b8;
     color: #E0FBFC;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navBar {
+    position: fixed;
+    width: 100%;
   }
 }
 
@@ -477,16 +517,27 @@ body {
   bottom: 0;
 }
 
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .mainContent {
+  width: 100%;
   background-image: url("/homePageImage.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  background-blend-mode: multiply;
+  background-color: rgba(90, 33, 95, 0.603);
+  padding: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,10 +548,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: #E0FBFC;
+  gap: 4rem;
 }
 
 .mainContent a {
@@ -513,40 +565,39 @@ body {
 }
 
 .imagemPerfil {
-  width: 1000px;
+  padding-top: 2rem;
+  width: 20rem;
 }
 
 .imagemPerfil span {
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 15px black;
-          box-shadow: 0 0 15px black;
+  border-radius: 1.8rem;
+  -webkit-box-shadow: 0 0 1rem black;
+          box-shadow: 0 0 1rem black;
 }
 
 .descriptionMain {
-  padding-left: 100px;
+  width: 40rem;
 }
 
 .descriptionMain h2 {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 23px;
+  font-size: 1.4rem;
 }
 
 .descriptionMain h1 {
   font-family: "Merriweather Sans", sans-serif;
   color: #EE6C4D;
-  font-size: 50px;
+  font-size: 3.2rem;
 }
 
 .descriptionMain p {
   font-family: "Work Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .skills {
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 30px;
-  padding-bottom: 100px;
+  width: 100%;
+  padding: 2rem 6.25rem 4rem 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,14 +633,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  border-bottom-width: 2px;
+  border-bottom-width: 0.2rem;
   border-bottom-style: solid;
   border-bottom-color: #E0FBFC;
 }
 
 .descriptionSkills h1 {
   color: #E0FBFC;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "Merriweather Sans", sans-serif;
   border-color: #EE6C4D;
 }
@@ -602,6 +653,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -611,17 +663,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.63rem;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
 }
 
 .abilities {
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 30px;
-  padding-bottom: 120px;
+  width: 100%;
+  padding: 2rem 6.25rem 4rem 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,21 +692,21 @@ body {
 }
 
 .descriptionAbilities {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  border-bottom-width: 2px;
+  border-bottom-width: 0.2rem;
   border-bottom-style: solid;
   border-bottom-color: #E0FBFC;
 }
 
 .descriptionAbilities h1 {
   color: #E0FBFC;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "Merriweather Sans", sans-serif;
   border-color: #EE6C4D;
 }
@@ -667,6 +719,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -676,31 +729,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.63rem;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
 }
 
 .divider {
   display: block;
   width: 100%;
-  height: 6px;
+  height: 0.3rem;
   background: #33425c;
 }
 
 .complementation {
+  width: 100%;
   background-position: center top;
+  padding: 2rem 6.25rem 4rem 6.25rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
   background-color: rgba(90, 33, 95, 0.603);
   background-image: url("/secondaryImage.jpg");
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,10 +762,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #E0FBFC;
-  width: 100%;
 }
 
 .descriptionPersonalProjects {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,26 +784,26 @@ body {
 
 .descriptionPersonalProjects h2 {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 23px;
+  font-size: 1.5rem;
 }
 
 .descriptionPersonalProjects h1 {
   font-family: "Merriweather Sans", sans-serif;
   color: #EE6C4D;
-  font-size: 50px;
+  font-size: 3.2rem;
 }
 
 .descriptionPersonalProjects p {
   font-family: "Work Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .descriptionPersonalProjects a {
-  font-size: 15px;
+  font-size: 0.9rem;
   background: #1a2b3f;
   color: #E0FBFC;
-  padding: 6px 15px 6px 15px;
-  border-radius: 10px;
+  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+  border-radius: 0.2rem;
   text-decoration: none;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
@@ -780,26 +833,26 @@ body {
 
 .descriptionPersonalBlog h2 {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 23px;
+  font-size: 1.5rem;
 }
 
 .descriptionPersonalBlog h1 {
   font-family: "Merriweather Sans", sans-serif;
   color: #EE6C4D;
-  font-size: 50px;
+  font-size: 3.2rem;
 }
 
 .descriptionPersonalBlog p {
   font-family: "Work Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .descriptionPersonalBlog a {
-  font-size: 15px;
+  font-size: 0.9rem;
   background: #1a2b3f;
   color: #E0FBFC;
-  padding: 6px 15px 6px 15px;
-  border-radius: 10px;
+  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+  border-radius: 0.2rem;
   text-decoration: none;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
@@ -843,16 +896,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
+  margin-top: 1.9rem;
+  width: 100%;
 }
 
 .contato h1 {
+  text-align: center;
   font-family: "Merriweather Sans", sans-serif;
   color: #EE6C4D;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .socialMediaLinks {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,12 +916,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 100px;
-  font-size: 100px;
-  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  font-size: 4.4rem;
+  margin-top: 1.8rem;
 }
 
 .socialMediaLinks a {
@@ -879,6 +940,29 @@ body {
 .socialMediaLinks a:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+@media only screen and (max-width: 800px) {
+  .mainContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .descriptionMain {
+    text-align: center;
+  }
+  .descriptionPersonalBlog {
+    text-align: center;
+  }
+  .descriptionPersonalBlog div {
+    width: 100%;
+  }
+  .descriptionPersonalProjects {
+    text-align: center;
+  }
+  .descriptionPersonalProjects div {
+    width: 100%;
+  }
 }
 
 .bannerSection {
@@ -896,6 +980,8 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(95, 68, 97, 0.603);
   height: 250px;
 }
 

@@ -119,7 +119,7 @@
 
     .menuMobile {
         flex-direction: column;
-        background: #101318;
+        background: $button-color;
         width: 100%;
         position: absolute;
         top: 4.5rem;
@@ -141,5 +141,12 @@
                 color: $third-color;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navBar {
+        position: fixed;
+        width: 100%;
     }
 }
