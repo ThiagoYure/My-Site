@@ -406,14 +406,14 @@
   padding-left: 1rem;
   position: fixed;
   z-index: 999;
-  overflow-x: hidden;
 }
 
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: visible;
+  overflow-y: visible;
+  overflow-x: hidden;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

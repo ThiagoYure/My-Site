@@ -10,12 +10,12 @@
     padding-left: 1rem;
     position: fixed;
     z-index: 999;
-    overflow-x: hidden;
 }
 
 .menu {
     display: flex;
-    overflow: visible;
+    overflow-y: visible;
+    overflow-x: hidden;
     flex-direction: row;
     width: 100%;
     align-items: center;
