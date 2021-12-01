@@ -53,7 +53,7 @@ export default function App() {
 
   return (
     <>
-      <div className="main">
+      <div>
         <div className="mainContent">
           <div className="imagemPerfil">
             <Image src="/FotoPerfil.png" alt="Imagem de Perfil" width="100" height="100" layout="responsive"/>

@@ -619,20 +619,6 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
-.main {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  z-index: 1;
-  margin: 0;
-}
-
 .mainContent {
   width: 100%;
   /*background-image: url("/homePageImage.jpg");*/
@@ -901,7 +887,7 @@ p {
   margin-top: 2rem;
   width: 50%;
   font-size: 0.9rem;
-  background: #1a2b3f;
+  background: #76a0b8;
   color: #E0FBFC;
   padding: 0.3rem 0.9rem 0.3rem 0.9rem;
   border-radius: 0.2rem;
@@ -942,7 +928,7 @@ p {
   margin-top: 2rem;
   width: 50%;
   font-size: 0.9rem;
-  background: #1a2b3f;
+  background: #76a0b8;
   color: #E0FBFC;
   padding: 0.3rem 0.9rem 0.3rem 0.9rem;
   border-radius: 0.2rem;
@@ -1102,6 +1088,12 @@ p {
   }
   [data-animation="fade-in"].animate {
     opacity: 1;
+  }
+  .descriptionPersonalBlog a {
+    background: #1a2b3f;
+  }
+  .descriptionPersonalProjects a {
+    background: #1a2b3f;
   }
 }
 
