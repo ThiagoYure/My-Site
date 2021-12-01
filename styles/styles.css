@@ -176,7 +176,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1.9rem;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
   font-size: 2rem;
 }
 
@@ -592,10 +593,10 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+}
+
+div {
+  margin: 0;
 }
 
 h1 {
@@ -629,18 +630,19 @@ p {
           flex-direction: column;
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 
 .mainContent {
   width: 100%;
-  background-image: url("/homePageImage.jpg");
+  /*background-image: url("/homePageImage.jpg");*/
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-attachment: fixed;*/
   /*background-blend-mode: multiply;*/
-  /*background-color: rgba(90, 33, 95, 0.644);*/
-  padding: 20% 10% 5% 10%;
+  background-color: #352936;
+  padding: 100px 10% 5% 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,7 +768,7 @@ p {
           justify-content: center;
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
-  row-gap: 3rem;
+  row-gap: 40px;
 }
 
 .abilities {
@@ -832,7 +834,7 @@ p {
           justify-content: center;
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
-  row-gap: 3rem;
+  row-gap: 40px;
 }
 
 .divider {
@@ -848,9 +850,9 @@ p {
   padding: 5% 10% 5% 10%;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-blend-mode: multiply;
-    background-color: rgba(90, 33, 95, 0.603);*/
-  background-image: url("/secondaryImage.jpg");
+  /*background-blend-mode: multiply;*/
+  background-color: #1f1f3a;
+  /*background-image: url("/secondaryImage.jpg");*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1008,8 +1010,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 15px;
   margin-top: 1.8rem;
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -1081,11 +1084,13 @@ p {
     width: 50%;
   }
   .mainContent {
+    background-image: url("/homePageImage.jpg");
     background-color: rgba(90, 33, 95, 0.644);
     background-attachment: fixed;
     background-blend-mode: multiply;
   }
   .complementation {
+    background-image: url("/secondaryImage.jpg");
     background-color: rgba(90, 33, 95, 0.644);
     background-attachment: fixed;
     background-blend-mode: multiply;
@@ -1171,9 +1176,9 @@ p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 2rem;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  row-gap: 40px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
 }
 
 .postList a {
@@ -1419,9 +1424,9 @@ p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 2rem;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  row-gap: 40px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
 }
 
 .projectsList a {
