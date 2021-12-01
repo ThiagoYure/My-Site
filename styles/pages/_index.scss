@@ -298,6 +298,14 @@
     .imagemPerfil {
         width: 50%;
     }
+    [data-animation] {
+        opacity: 0;
+        transition: all ease-in 0.3s;
+    }
+    
+    [data-animation="fade-in"].animate {
+        opacity: 1;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -334,6 +342,14 @@
     .socialMediaLinks {
         font-size: 4.5rem;
     }
+    [data-animation] {
+        opacity: 0;
+        transition: all ease-in 0.3s;
+    }
+    
+    [data-animation="fade-in"].animate {
+        opacity: 1;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -362,6 +378,14 @@
         background-color: rgba(90, 33, 95, 0.644);
         background-attachment: fixed;
         background-blend-mode: multiply;
+    }
+    [data-animation] {
+        opacity: 0;
+        transition: all ease-in 0.3s;
+    }
+    
+    [data-animation="fade-in"].animate {
+        opacity: 1;
     }
 }
 

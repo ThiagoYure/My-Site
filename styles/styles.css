@@ -465,9 +465,6 @@
   width: 40%;
   position: absolute;
   top: 4.50rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding: 0;
   -webkit-box-shadow: -0.2rem 0.2rem 2rem black;
           box-shadow: -0.2rem 0.2rem 2rem black;
   z-index: 998;
@@ -1036,6 +1033,14 @@ p {
   .imagemPerfil {
     width: 50%;
   }
+  [data-animation] {
+    opacity: 0;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+  }
+  [data-animation="fade-in"].animate {
+    opacity: 1;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1072,6 +1077,14 @@ p {
   .socialMediaLinks {
     font-size: 4.5rem;
   }
+  [data-animation] {
+    opacity: 0;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+  }
+  [data-animation="fade-in"].animate {
+    opacity: 1;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1091,6 +1104,14 @@ p {
     background-color: rgba(90, 33, 95, 0.644);
     background-attachment: fixed;
     background-blend-mode: multiply;
+  }
+  [data-animation] {
+    opacity: 0;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+  }
+  [data-animation="fade-in"].animate {
+    opacity: 1;
   }
 }
 
