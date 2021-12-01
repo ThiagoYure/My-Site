@@ -10,8 +10,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     /*background-attachment: fixed;*/
-    background-blend-mode: multiply;
-    background-color: rgba(90, 33, 95, 0.644);
+    /*background-blend-mode: multiply;*/
+    /*background-color: rgba(90, 33, 95, 0.644);*/
     padding: 20% 10% 5% 10%;
     display: flex;
     flex-direction: column;
@@ -21,11 +21,11 @@
     row-gap: 1rem;
 
     a {
-        color: rgb(118, 179, 118);
+        color: rgb(119, 216, 119);
         text-decoration: none;
 
         &:hover {
-            color: rgb(166, 255, 166);
+            color: rgb(140, 255, 188);
         }
     }
 }
@@ -154,8 +154,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     //background-attachment: fixed;
-    background-blend-mode: multiply;
-    background-color: rgba(90, 33, 95, 0.603);
+    /*background-blend-mode: multiply;
+    background-color: rgba(90, 33, 95, 0.603);*/
     background-image: url("/secondaryImage.jpg");
     display: flex;
     flex-direction: column;
@@ -353,11 +353,15 @@
     }
 
     .mainContent {
+        background-color: rgba(90, 33, 95, 0.644);
         background-attachment: fixed;
+        background-blend-mode: multiply;
     }
 
     .complementation {
+        background-color: rgba(90, 33, 95, 0.644);
         background-attachment: fixed;
+        background-blend-mode: multiply;
     }
 }
 
