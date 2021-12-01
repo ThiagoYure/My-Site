@@ -6,7 +6,9 @@
     align-items: center;
     justify-content: center;
     color: $third-color;
-    font-family: $regular-text-font;
+    font-family: $regular-text-font; 
+    position: relative;
+    z-index: 999;
 }
 
 .topInfos {
