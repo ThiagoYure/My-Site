@@ -246,12 +246,8 @@
 }*/
 
 [data-animation] {
-    opacity: 0;
-    transition: all ease-in 0.3s;
-}
-
-[data-animation="fade-in"].animate {
     opacity: 1;
+    transition: all ease-in 0.3s;
 }
 
 .contato {
@@ -300,10 +296,6 @@
     .imagemPerfil {
         width: 50%;
     }
-    [data-animation] {
-        opacity: 1;
-        transition: all ease-in 0.3s;
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -340,10 +332,6 @@
     .socialMediaLinks {
         font-size: 4.5rem;
     }
-    [data-animation] {
-        opacity: 1;
-        transition: all ease-in 0.3s;
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -374,8 +362,12 @@
         background-blend-mode: multiply;
     }
     [data-animation] {
-        opacity: 1;
+        opacity: 0;
         transition: all ease-in 0.3s;
+    }
+    
+    [data-animation="fade-in"].animate {
+        opacity: 1;
     }
 }
 

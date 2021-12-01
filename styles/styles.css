@@ -106,7 +106,7 @@
   color: #E0FBFC;
   font-family: "Work Sans", sans-serif;
   position: relative;
-  z-index: 999;
+  z-index: 998;
 }
 
 .topInfos {
@@ -129,6 +129,7 @@
 }
 
 .aboutSite {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,13 +964,9 @@ p {
     border-bottom-style: solid;
 }*/
 [data-animation] {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
-}
-
-[data-animation="fade-in"].animate {
-  opacity: 1;
 }
 
 .contato {
@@ -1037,11 +1034,6 @@ p {
   .imagemPerfil {
     width: 50%;
   }
-  [data-animation] {
-    opacity: 1;
-    -webkit-transition: all ease-in 0.3s;
-    transition: all ease-in 0.3s;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1078,11 +1070,6 @@ p {
   .socialMediaLinks {
     font-size: 4.5rem;
   }
-  [data-animation] {
-    opacity: 1;
-    -webkit-transition: all ease-in 0.3s;
-    transition: all ease-in 0.3s;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1104,9 +1091,12 @@ p {
     background-blend-mode: multiply;
   }
   [data-animation] {
-    opacity: 1;
+    opacity: 0;
     -webkit-transition: all ease-in 0.3s;
     transition: all ease-in 0.3s;
+  }
+  [data-animation="fade-in"].animate {
+    opacity: 1;
   }
 }
 

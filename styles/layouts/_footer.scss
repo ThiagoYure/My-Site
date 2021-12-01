@@ -8,7 +8,7 @@
     color: $third-color;
     font-family: $regular-text-font; 
     position: relative;
-    z-index: 999;
+    z-index: 998;
 }
 
 .topInfos {
@@ -22,6 +22,7 @@
 }
 
 .aboutSite {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
