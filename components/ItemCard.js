@@ -1,10 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ItemCard = ({infos}) => {
+const ItemCard = ({ infos }) => {
     return (
-        <div className="itemCard" style={{background:""+infos.color}}>
-            <div className="icone"><FontAwesomeIcon icon={infos.icon}/></div>
-            <h2>{infos.skill}</h2>
+        <div className="cardItem">
+            <div className="cardIcon" style={{ background: "" + infos.color }}>
+                <FontAwesomeIcon icon={infos.icon} />
+                <div className="abilityValue">
+                    <div>{infos.value}</div>
+                </div>
+            </div>
+            <div className="skillName">
+                <h3>{infos.skill}</h3>
+            </div>
         </div>
     );
 }

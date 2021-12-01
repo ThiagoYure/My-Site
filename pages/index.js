@@ -75,11 +75,11 @@ export default function App() {
             <h2>&#34; Com grandes poderes vêm grandes <span className="destaque">responsabilidades</span>. &#34;</h2>
           </div>
           <div className="skillsList" data-animation="fade-in">
-            <ItemCard infos={{ skill: "Criatividade Super-Humana", icon: faDragon, color: "#14262e" }} />
-            <ItemCard infos={{ skill: "Dedicação Cósmica", icon: faUserAstronaut, color: "#14262e" }} />
-            <ItemCard infos={{ skill: "Trabalho em Equipe Magnético", icon: faUserFriends, color: "#14262e" }} />
-            <ItemCard infos={{ skill: "Bom Humor Astral", icon: faGrinTears, color: "#14262e" }} />
-            <ItemCard infos={{ skill: "Aprendizado Super-Sônico", icon: faBrain, color: "#14262e" }} />
+            <ItemCard infos={{ skill: "Criatividade Super-Humana", icon: faDragon, color: "#353b73", value: "+8" }} />
+            <ItemCard infos={{ skill: "Dedicação Cósmica", icon: faUserAstronaut, color: "#353b73", value: "+6" }} />
+            <ItemCard infos={{ skill: "Trabalho em Equipe Magnético", icon: faUserFriends, color: "#353b73", value: "+9" }} />
+            <ItemCard infos={{ skill: "Bom Humor Astral", icon: faGrinTears, color: "#353b73", value: "+8" }} />
+            <ItemCard infos={{ skill: "Aprendizado Super-Sônico", icon: faBrain, color: "#353b73", value: "+7" }} />
           </div>
         </div>
         <div className="divider"></div>
@@ -88,19 +88,19 @@ export default function App() {
             <h1>Conhecimentos Arcanos</h1>
           </div>
           <div className="abilitiesList" data-animation="fade-in">
-            <ItemCard infos={{ skill: "ReactJS", icon: faReact, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "ReactNative", icon: faMobileAlt, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "SQL", icon: faDatabase, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "Javascript", icon: faJs, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "HTML", icon: faHtml5, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "CSS/SASS", icon: faCss3Alt, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "NodeJS", icon: faNodeJs, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "NextJS", icon: faReact, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "Design Gráfico", icon: faPencilRuler, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "Ilustração Digital", icon: faPaintBrush, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "Escrita Criativa", icon: faSignature, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "API", icon: faGlobe, color: "#1e142e" }} />
-            <ItemCard infos={{ skill: "Angular", icon: faAngular, color: "#1e142e" }} />
+            <ItemCard infos={{ skill: "ReactJS", icon: faReact, color: "#1e142e", value: "+9" }} />
+            <ItemCard infos={{ skill: "ReactNative", icon: faMobileAlt, color: "#1e142e", value: "+5" }} />
+            <ItemCard infos={{ skill: "SQL", icon: faDatabase, color: "#1e142e", value: "+8" }} />
+            <ItemCard infos={{ skill: "Javascript", icon: faJs, color: "#1e142e", value: "+9" }} />
+            <ItemCard infos={{ skill: "HTML", icon: faHtml5, color: "#1e142e", value: "+7" }} />
+            <ItemCard infos={{ skill: "CSS/SASS", icon: faCss3Alt, color: "#1e142e", value: "+8" }} />
+            <ItemCard infos={{ skill: "NodeJS", icon: faNodeJs, color: "#1e142e", value: "+6" }} />
+            <ItemCard infos={{ skill: "NextJS", icon: faReact, color: "#1e142e", value: "+6" }} />
+            <ItemCard infos={{ skill: "Design Gráfico", icon: faPencilRuler, color: "#1e142e", value: "+7" }} />
+            <ItemCard infos={{ skill: "Ilustração Digital", icon: faPaintBrush, color: "#1e142e", value: "+7" }} />
+            <ItemCard infos={{ skill: "Escrita Criativa", icon: faSignature, color: "#1e142e", value: "+8" }} />
+            <ItemCard infos={{ skill: "API", icon: faGlobe, color: "#1e142e", value: "+6" }} />
+            <ItemCard infos={{ skill: "Angular", icon: faAngular, color: "#1e142e", value: "+5" }} />
           </div>
         </div>
         <div className="complementation">

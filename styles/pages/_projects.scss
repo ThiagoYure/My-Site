@@ -1,20 +1,18 @@
 .bannerSectionProjects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    text-align: center;
     background-image: url("/projectBanner.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    background-blend-mode: multiply;
+    background-color: rgba(95, 68, 97, 0.212);
+    padding: 13% 5% 3% 5%;
 
     h1 {
-        padding: 20px;
+        font-size: 3.5rem;
         font-family: $title-font;
         color: $fourthy-color;
-        font-size: 80px;
-        text-shadow: 1px 4px 3px black;
+        text-shadow: 0.2rem 0.2rem 0.2rem black;
     }
 }
 
@@ -23,17 +21,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-    margin-bottom: 50px;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 6rem;
+    width: 100%;
 }
 
 .titleProjects {
     color: $third-color;
-    display: flex;
-    justify-content: flex-start;
+    text-align: center;
     width: 100%;
     border-bottom-color: $third-color;
-    border-bottom-width: 2px;
+    border-bottom-width: 0.18rem;
     border-bottom-style: solid;
 
     h2 {
@@ -43,14 +43,16 @@
 
 .projectsList {
     width: 100%;
-    padding-top: 40px;
+    padding-top: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 60px;
-
+    row-gap: 2rem;
+    column-gap: 2rem;
     a {
+        display: flex;
         text-decoration: none;
         color: $third-color;
         font-family: $regular-text-font;
@@ -58,36 +60,72 @@
 }
 
 .project {
-    box-shadow: -5px 5px 20px #0d0814;
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -0.5rem 0.5rem 0.6rem #0d0814;
+    width: 13rem;
+    height: 18rem;
+}
 
-    span {
-        max-width: 100%;
-    }
+.projectMetadataImage {
+    flex: 2;
 }
 
 .projectMetadata {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: #1e142e;
-    padding: 20px;
+    padding: 1rem;
+    text-align: center;
+    row-gap: 0.4rem;
+    overflow: hidden;
 
     .titleProjectMini {
+        font-size: 1rem;
         font-family: $title-font;
-        margin-bottom: 5px;
-        font-size: 20px;
         color: $fourthy-color;
     }
 
     .dateProjectMini {
-        font-size: 12px;
+        font-size: 0.8rem;
         color: $link-color;
     }
 
     .resumeProjectMini {
-        margin-bottom: 5px;
-        font-size: 15px;
+        font-size: 0.95rem;
     }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .bannerSectionProjects {
+        padding-top: 3%;
+    }
+
+    .titleProjects {
+        text-align: start;
+    }
+
+    .projectsList {
+        justify-content: start;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

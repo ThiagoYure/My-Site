@@ -1,26 +1,72 @@
-.itemCard {
-    padding: 10px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: $third-color;
-    border-width: 2px;
-    width: 250px;
-    height: 170px;
+.cardItem {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    height: 12rem;
+    width: 10rem;
+}
+
+.cardIcon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-top: 30px;
+    color: $third-color;
+    font-size: 3rem;
+    flex: 3;
+    width: 100%;
+    padding: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
 
-    h2 {
-        font-family: $title-font;
-        font-size: 20px;
-        color: $third-color;
-    }
+.abilityValue {
+    background: $third-color;
+    border-radius: 30rem;
+    padding: 0.4rem;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    font-size: 1.2rem;
+    color: $primary-color;
+    font-family: $title-font;
+}
 
-    .icone {
-        color: $third-color;
-        font-size: 30px;
+.skillName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    background: $third-color;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    height: 100%;
+    flex: 1;
+    padding: 1rem;
+
+    h3 {
+        font-size: 0.7rem;
     }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .skillName {
+        h3 {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

@@ -1,29 +1,31 @@
 .projectBanner {
+    text-align: center;
+    padding: 18% 5% 5% 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(95, 68, 97, 0.212);
+    row-gap: 1rem;
 }
 
 .projectTitle {
     font-family: $title-font;
-    margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 2.6rem;
     color: $fourthy-color;
-    text-shadow: 1px 4px 3px black;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
 }
 
 .projectDate {
     font-family: $regular-text-font;
-    font-size: 15px;
+    font-size: 0.7rem;
     font-weight: bold;
     color: $third-color;
-    background: $fourthy-color;
-    padding: 6px 20px 6px 20px;
+    background: $highlitgh-menu-color;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .projectContent {
@@ -31,25 +33,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 2rem;
     color: $third-color;
+    width: 100%;
 
     h1 {
         font-family: $title-font;
-        font-size: 30px;
         color: $third-color;
+        font-size: 2rem;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         border-bottom-color: $third-color;
-        border-bottom-width: 2px;
+        border-bottom-width: 0.15rem;
         border-bottom-style: solid;
-        padding: 0 0 20px 0;
+        padding: 0 0 1rem 0;
     }
 
     p {
         font-family: $regular-text-font;
-        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .projectBanner {
+        padding-top: 5%;
     }
 }

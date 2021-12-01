@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
-    const [classMenu, setClassMenu] = useState("menuLinks");
+    const [classMenu, setClassMenu] = useState("closed");
     const openMenu = () => {
-        if (classMenu === "menuLinks") {
-            setClassMenu("menuMobile");
-        } else if (classMenu === "menuMobile") {
-            setClassMenu("menuLinks");
+        if (classMenu === "open") {
+            setClassMenu("closed");
+        } else if (classMenu === "closed") {
+            setClassMenu("open");
         }
     }
 
@@ -30,7 +30,7 @@ const NavBar = () => {
                     <FontAwesomeIcon icon={faBars} />
                 </div>
             </div>
-            <div className={classMenu}>
+            <div className={"menuLinks " +  classMenu}>
                 <div>
                     <Link href="/">
                         <a>Home</a>

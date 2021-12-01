@@ -17,18 +17,23 @@ const Projects = ({ projects }) => {
                     <div className="projectsList">
                         {projects.map((project) => {
                             return (
-                                <div className="project" key={project.metadata.slug}>
-                                    <Link href={`/projects/${project.metadata.slug}`}>
-                                        <a>
-                                            <Image src={project.metadata.banner} alt="Project Image" width="300" height="300" layout="responsive" />
+                                <Link href={`/projects/${project.metadata.slug}`} key={project.metadata.slug}>
+                                    <a>
+                                        <div className="project">
+                                            <div className="projectMetadataImage" style={{
+                                                backgroundImage: `url(${project.metadata.banner})`,
+                                                backgroundSize: 'cover',
+                                                backgroundRepeat: 'no-repeat'
+                                            }}>
+                                            </div>
                                             <div className="projectMetadata">
                                                 <div className="titleProjectMini">{project.metadata.name}</div>
                                                 <div className="resumeProjectMini">{project.metadata.excerpt}</div>
                                                 <div className="dateProjectMini">{project.metadata.date}</div>
                                             </div>
-                                        </a>
-                                    </Link>
-                                </div>
+                                        </div>
+                                    </a>
+                                </Link>
                             );
                         })}
                     </div>

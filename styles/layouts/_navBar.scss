@@ -1,54 +1,73 @@
 .navBar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: $fifty-color;
     font-family: $items-font;
     width: 100%;
-    padding-right: 0.05rem;
+    padding-right: 1rem;
     padding-left: 1rem;
-    position: relative;
+    position: fixed;
     z-index: 999;
+}
 
-    .menu {
-        display: flex;
-        flex-direction: row;
+.menu {
+    display: flex;
+    overflow: visible;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.icone {
+    width: 2.5rem;
+
+    span {
         width: 100%;
-        align-items: center;
-        justify-content: space-between;
     }
 
-    .icone {
-        width: 3rem;
-
-        span {
-            width: 100%;
-        }
-
-        a {
-            transition: all ease-in 0.5s;
-            & :hover {
-                box-shadow: 0 0 1rem rgba(255, 255, 255, 0.534);
-            }
+    a {
+        transition: all ease-in 0.5s;
+        & :hover {
+            box-shadow: 0 0 1rem rgba(255, 255, 255, 0.534);
         }
     }
 }
 
 .menuLinks {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: visible;
+    right: 0;
+    background: $button-color;
+    width: 40%;
+    position: absolute;
+    top: 4.50rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 0;
+    box-shadow: -0.2rem 0.2rem 2rem rgb(0, 0, 0);
+    z-index: 998;
+
+    div {
+        width: 100%;
+    }
 
     a {
+        width: inherit;
         text-decoration: none;
         font-size: 0.75rem;
         display: block;
         padding: 1.63rem;
         color: $link-color;
         transition: all ease-in 0.2s;
+        text-align: center;
 
         &:hover {
             background: $secondary-color;
@@ -60,93 +79,75 @@
 .menuIcon {
     font-size: 1.8rem;
     color: $link-color;
+    display: block;
+    overflow: visible;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.open {
+    display: flex;
+    overflow: hidden;
+}
+
+.closed {
     display: none;
     overflow: hidden;
-    cursor: pointer;
 }
 
-.menuMobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-
-    a {
-        width: 100%;
-        text-decoration: none;
-        font-size: 0.75rem;
-        display: block;
-        padding: 1.63rem;
-        color: $link-color;
-        transition: all ease-in 0.2s;
-
-        &:hover {
-            background: $secondary-color;
-            color: $third-color;
-        }
-    }
-}
-
-@media only screen and(max-width: 600px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .navBar {
-        padding-right: 1rem;
-        flex-direction: column;
-        position: fixed;
-        width: 100%;
-        padding: 0;
-    }
-
-    .menuLinks {
-        display: none;
-        overflow: hidden;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .menuIcon {
-        padding: 0.8rem;
-        display: block;
-        overflow: visible;
+        position: relative;
+        flex-direction: row;
+        padding-right: 0.5rem;
     }
 
     .menu {
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-right: 0.5rem;
-        padding-left: 1rem;
+        width: unset;
     }
 
-    .menuMobile {
-        flex-direction: column;
-        background: $button-color;
-        width: 100%;
-        position: absolute;
-        top: 4.5rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding: 0;
+    .menuIcon {
+        display: none;
+        overflow: hidden;
+    }
+
+    .menuLinks {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        background: unset;
+        width: unset;
+        box-shadow: unset;
 
         div {
-            width: 100%;
+            width: auto;
         }
 
         a {
+            width: 100%;
+            text-decoration: none;
+            font-size: 0.75rem;
+            display: block;
+            padding: 1.63rem;
             color: $link-color;
-            width: inherit;
+            transition: all ease-in 0.2s;
             text-align: center;
 
-            &:active {
+            &:hover {
                 background: $secondary-color;
                 color: $third-color;
             }
         }
-    }
-}
 
-@media only screen and (max-width: 992px) {
-    .navBar {
-        position: fixed;
-        width: 100%;
+        .icone {
+            width: 0;
+        }
+    }
+
+    .closed {
+        display: flex;
+        overflow: visible;
     }
 }
