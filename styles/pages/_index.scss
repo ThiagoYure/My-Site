@@ -1,5 +1,4 @@
 .mainContent {
-    width: 100%;
     /*background-image: url("/homePageImage.jpg");*/
     background-position: center top;
     background-repeat: no-repeat;
@@ -89,8 +88,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    column-gap: 3rem;
-    row-gap: 40px;
+    /*column-gap: 3rem;
+    row-gap: 40px;*/
 }
 
 .abilities {
@@ -131,8 +130,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    column-gap: 3rem;
-    row-gap: 40px;
+    /*column-gap: 3rem;
+    row-gap: 40px;*/
 }
 
 .divider {
@@ -263,13 +262,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 40px;
-    row-gap: 15px;
+    /*column-gap: 40px;
+    row-gap: 15px;*/
     margin-top: 1.8rem;
     font-size: 3rem;
     margin-bottom: 3rem;
 
     a {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
         text-decoration: none;
         color: $third-color;
         display: block;
@@ -331,14 +333,12 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .descriptionPersonalBlog {
-
         div {
             width: 50%;
         }
     }
 
     .descriptionPersonalProjects {
-
         div {
             width: 50%;
         }
@@ -361,7 +361,7 @@
         opacity: 0;
         transition: all ease-in 0.3s;
     }
-    
+
     [data-animation="fade-in"].animate {
         opacity: 1;
     }

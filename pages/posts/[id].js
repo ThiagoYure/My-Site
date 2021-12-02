@@ -5,7 +5,6 @@ import { remark } from 'remark';
 import remarkHTML from 'remark-html';
 
 const Post = ({ post }) => {
-    console.log(post);
     return (
         <div>
             <div className="postBanner" style={{

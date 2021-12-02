@@ -4,7 +4,6 @@ import { remark } from 'remark';
 import remarkHTML from 'remark-html';
 
 const Project = ({ project }) => {
-    console.log(project);
     return (
         <div>
             <div className="projectBanner" style={{
