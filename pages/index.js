@@ -64,7 +64,7 @@ export default function App() {
             <p>
               E aí, tudo bem? Sou graduando no <a href="https://www.ifpb.edu.br/">Instituto Federal de Educação Ciência e Tecnologia da Paraíba </a>
               desde 2015 e estou na fase final da minha formação. Já passei pelo batismo no mercado de trabalho
-              e agora busco evoluir cada vez mais nesse meio.
+              e agora busco evoluir cada vez mais nesse meio e na minha vida pessoal.
             </p>
             <p>Seja muito bem vindo(a) ao meu site!</p>
           </div>
