@@ -1,10 +1,31 @@
 import Link from "next/link";
+import axios from "axios";
 import Image from "next/image";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare, faLinkedin, faBehanceSquare, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+    const [email, setEmail] = useState('');
+    const newsletter = () => {
+        if(email.length > 0) {
+            axios({
+                method: 'post',
+                url: '/api/newsletter',
+                data: {
+                    email: email
+                }
+            }).then(data => {
+                return data;
+            }).catch(error => {
+                console.log(error);
+            })
+        }else {
+            alert("Por favor, informe seu email primeiro.");
+        }
+    }
+
     return (
         <footer className="footer">
             <div className="topInfos">
@@ -12,7 +33,7 @@ const Footer = () => {
                     <div className="logo">
                         <Link href="/">
                             <a>
-                                <Image src="/Thiago Logo 3.png" alt="Logo" width="270" height="100" layout="responsive"/>
+                                <Image src="/Thiago Logo 3.png" alt="Logo" width="270" height="100" layout="responsive" />
                             </a>
                         </Link>
                     </div>
@@ -68,13 +89,17 @@ const Footer = () => {
                         <form>
                             <div>
                                 <label>
-                                    <input type="email" placeholder="Digite seu email aqui ..."/>
+                                    <input type="email" placeholder="Digite seu email aqui ..." onChange={(e) => {
+                                        setEmail(e.target.value);
+                                    }}/>
                                     {/*<input type="text" value={email} onChange={e => setEmail(e.target.value)} />*/}
                                 </label>
                             </div>
                         </form>
                         <div className="buttons">
-                            <a>Enviar</a>
+                            <a onClick={() => {
+                                newsletter();
+                            }}>Enviar</a>
                         </div>
                     </div>
                 </div>
