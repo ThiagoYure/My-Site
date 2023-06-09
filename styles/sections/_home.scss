@@ -1,0 +1,28 @@
+#homeSection {
+    text-align: center;
+    padding-top: 1.5rem;
+
+    h1 {
+        line-height: normal;
+        color: #fff;
+
+        #nome {
+            background: -webkit-linear-gradient(#514FB5, #33E0FF);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    h3 {
+        margin-top: 1rem;
+        line-height: normal;
+        color: #fff;
+        padding: 0rem 3rem;
+    }
+
+    img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+}

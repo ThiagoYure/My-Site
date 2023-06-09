@@ -1,3 +1,11 @@
+//importando basis
+
+@import "basis";
+
+//importando página inicial
+
+@import "index";
+
 //importando variaveis e fontes
 @import "./core/core";
 
@@ -9,10 +17,6 @@
 
 @import "./layouts/layout";
 
-//importando basis
+//importando sections
 
-@import "basis";
-
-//importando pages
-
-@import "./pages/pages";
+@import "./sections/sections";

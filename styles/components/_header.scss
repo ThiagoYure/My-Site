@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    position: fixed;
+    z-index: 2;
+}
+
+#logoHeader {
+    width: 15%;
+}
+
+#menuTrigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    height: 3rem;
+    width: 3rem;
+    background-image: $main-gradient;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 5px 1px #242527;
+    cursor: pointer;
+}
+
+#nome {
+    color: $main-gradient;
+}
+
+#menuMobile {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
