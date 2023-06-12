@@ -56,10 +56,15 @@
         font-style: normal;
         margin-bottom: 1rem;
         min-width: 40%;
-    }
+        text-decoration: none;
 
-    .contactName {
-        color: $blue;
+        p {
+            color: #fff;
+        }
+
+        .contactName {
+            color: $blue;
+        }
     }
 
     .icon {
