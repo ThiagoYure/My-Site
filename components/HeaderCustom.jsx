@@ -9,10 +9,10 @@ export default function HeaderCustom() {
         const menu = document.getElementById('menuMobile');
         const status = !menuStatus;
         setmenuStatus(status);
-        if(status){
+        if (status) {
             menu.classList.remove("inactiveMenu");
             menu.classList.add("activeMenu");
-        }else {
+        } else {
             menu.classList.remove("active");
             menu.classList.add("inactiveMenu");
         }
@@ -25,18 +25,35 @@ export default function HeaderCustom() {
                 <FontAwesomeIcon icon={faBars} />
             </div>
             <div id="menuMobile" className="inactiveMenu">
-                <div className="menuItemMobile">Inicial</div>
-                <div className="menuItemMobile">Habilidades</div>
-                <div className="menuItemMobile">Sobre mim</div>
-                <div className="menuItemMobile">Projetos</div>
-                <div className="menuItemMobile">Contato</div>
+                <h3>_Menu</h3>
+                <a href="#homeSection" className="menuItemMobile">Inicial</a>
+                <a href="#skillsSection" className="menuItemMobile">Habilidades</a>
+                <a href="#aboutMeSection" className="menuItemMobile">Sobre mim</a>
+                <a href="#projectsSection" className="menuItemMobile">Projetos</a>
+                <a href="#contactMeSection" className="menuItemMobile">Contato</a>
             </div>
-            <div id="menu" className="inactiveMenu">
-                <div className="menuItem">Inicial</div>
-                <div className="menuItem">Habilidades</div>
-                <div className="menuItem">Sobre mim</div>
-                <div className="menuItem">Projetos</div>
-                <div className="menuItem">Contato</div>
+            <div id="menu">
+                <div id="navBar"></div>
+                <a href="#homeSection" className="menuItem">
+                    <span className="linkText caption">Inicial</span>
+                    <div className="triangle"></div>
+                </a>
+                <a href="#skillsSection" className="menuItem">
+                    <span className="linkText caption">Habilidades</span>
+                    <div className="triangle"></div>
+                </a>
+                <a href="#aboutMeSection" className="menuItem">
+                    <span className="linkText caption">Sobre mim</span>
+                    <div className="triangle"></div>
+                </a>
+                <a href="#projectsSection" className="menuItem">
+                    <span className="linkText caption">Projetos</span>
+                    <div className="triangle"></div>
+                </a>
+                <a href="#contactMeSection" className="menuItem">
+                    <span className="linkText caption">Contato</span>
+                    <div className="triangle"></div>
+                </a>
             </div>
         </header>
     )

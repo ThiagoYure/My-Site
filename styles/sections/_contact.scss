@@ -80,4 +80,8 @@
         border-radius: 50%;
         margin-bottom: 1rem;
     }
+
+    img {
+        animation: floating 2s ease-in-out infinite alternate;
+    }
 }
