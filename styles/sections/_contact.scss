@@ -85,3 +85,23 @@
         animation: floating 2s ease-in-out infinite alternate;
     }
 }
+
+@media screen and (min-width: 992px) {
+    #contactMeSection {
+
+        margin-top: 10vh;
+    
+        #buttonsGroup {
+            width: 40%;
+        }
+    
+        .contact {
+            justify-content: space-around;
+            min-width: auto;
+        }
+    
+        img {
+            width: 50%;
+        }
+    }
+}

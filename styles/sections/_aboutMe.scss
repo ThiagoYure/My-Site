@@ -25,3 +25,22 @@
         margin-bottom: 2rem;
     }
 }
+
+@media screen and (min-width: 992px) {
+    #aboutMeSection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    
+        .aboutMeInfo {
+            width: 40%;
+            text-align: start;
+            line-height: 1.5;
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+}

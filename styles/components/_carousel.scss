@@ -69,3 +69,33 @@
         background-size: cover;
     }
 }
+
+@media screen and (min-width: 992px) {
+    .carouselSection {
+        text-align: start;
+    }
+
+    .carouselProject {
+        height: 40vh;
+    }
+
+    .carouselPanelProject {
+        margin-left: 0;
+        img {
+            margin-left: 7vw;
+            margin-right: 7vw;
+            width: 12.4vw;
+            height: 12.4vw;
+        }
+    }
+
+    .carouselButtonsProject { 
+        width: 90%;
+        margin-left: 5%;
+
+        div {
+            width: 5vw;
+            height: 5vw;
+        }
+    }
+}

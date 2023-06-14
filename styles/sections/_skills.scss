@@ -110,3 +110,33 @@
         display: block;
     }
 }
+
+@media screen and (min-width: 992px) {
+    #carousel {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #fighters {
+        width: 50%;
+        overflow-x: hidden;
+    }
+
+    #carouselPanel {
+        img {
+            width: 33vw;
+        }
+    }
+
+    #carouselButtons {
+        div {
+            width: 5vw;
+            height: 5vw;
+        }
+    }
+
+    #fighterDescriptionPanel {
+        padding: 2rem 3rem;
+        width: 40%;
+    }
+}

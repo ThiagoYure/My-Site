@@ -12,6 +12,9 @@ export default function Carousel({ item, index, length }) {
         const marginInitial = panel.offsetLeft;
         const itemWidth = item.width + (item.offsetLeft * 2);
         const panelWidth = itemWidth * length;
+        console.log(marginInitial);
+        console.log(itemWidth);
+        console.log(panelWidth);
         setMarginValue(marginInitial);
         setOffset(itemWidth);
         setItemWidth(itemWidth);
