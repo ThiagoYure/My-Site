@@ -134,6 +134,10 @@ header {
     display: none;
 }
 
+.toTopLink {
+    display: none;
+}
+
 @media screen and (min-width: 992px) {
     #menu {
         display: flex;
@@ -222,5 +226,26 @@ header {
         width: 45%;
         padding: 4% 5%;
         margin-left: 22.5%;
+        position: relative;
+    }
+
+    .toTopLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: 2rem;
+        background-image: $main-gradient;
+        background-size: cover;
+        border-radius: 50%;
+        color: #fff;
+        box-shadow: 0 0 0.5rem 1px #242527;
+        z-index: 3;
+        box-sizing: border-box;
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
     }
 }

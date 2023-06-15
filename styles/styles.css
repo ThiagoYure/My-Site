@@ -77,7 +77,7 @@ p {
 
 @media screen and (min-width: 992px) {
   main {
-    padding: 12% 17% 5% 17%;
+    padding: 0 17% 5% 17%;
   }
   h1 {
     font-size: 2.8rem;
@@ -234,6 +234,10 @@ header {
   display: none;
 }
 
+.toTopLink {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   #menu {
     display: flex;
@@ -312,6 +316,26 @@ header {
     width: 45%;
     padding: 4% 5%;
     margin-left: 22.5%;
+    position: relative;
+  }
+  .toTopLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to top right, #514FB5, #33E0FF);
+    background-size: cover;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 0.5rem 1px #242527;
+    z-index: 3;
+    box-sizing: border-box;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
   }
 }
 footer {
@@ -329,97 +353,57 @@ footer em {
   color: #14b9d6;
 }
 
-.carouselSection {
-  text-align: center;
-  margin-top: 2rem;
+.gallerySection {
+  margin-top: 3rem;
+}
+.gallerySection h2 {
   color: #fff;
 }
-.carouselSection h2 {
-  line-height: normal;
-}
 
-.carouselProject {
-  width: 100%;
-  height: 18vh;
+.gallery {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  background-image: url("/images/background-carrossel-mobile.png");
-  background-size: cover;
-  overflow-x: hidden;
-}
-
-.carouselPanelProject {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  width: -moz-max-content;
-  width: max-content;
-  margin-left: 15vw;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  transition: all 0.4s ease-in-out;
-  box-sizing: border-box;
-}
-.carouselPanelProject img {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  width: 30vw;
-  height: 30vw;
-}
-
-.carouselButtonsProject {
+  justify-content: space-around;
   width: 100%;
+  text-decoration: none;
+}
+.gallery .itemProject {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+.gallery .projectCaption {
+  color: #fff;
+  width: 100%;
+  padding: 1rem 0;
+  box-sizing: border-box;
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.carouselButtonsProject div {
-  width: 15vw;
-  height: 15vw;
-  display: inline-block;
-  cursor: pointer;
-}
-.carouselButtonsProject .leftButtonProject {
-  background-image: url("/images/button-left.png");
-  background-size: cover;
-}
-.carouselButtonsProject .rightButtonProject {
-  background-image: url("/images/button-right.png");
-  background-size: cover;
+  bottom: 0;
+  background-color: rgba(40, 84, 92, 0.5490196078);
+  display: block;
 }
 
 @media screen and (min-width: 992px) {
-  .carouselSection {
-    text-align: start;
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
-  .carouselProject {
-    height: 40vh;
+  .gallery .itemProject {
+    width: 45%;
   }
-  .carouselPanelProject {
-    margin-left: 0;
+  .gallery .itemProject:hover .projectCaption {
+    opacity: 1;
   }
-  .carouselPanelProject img {
-    margin-left: 7vw;
-    margin-right: 7vw;
-    width: 12.4vw;
-    height: 12.4vw;
-  }
-  .carouselButtonsProject {
-    width: 90%;
-    margin-left: 5%;
-  }
-  .carouselButtonsProject div {
-    width: 5vw;
-    height: 5vw;
+  .gallery .projectCaption {
+    background-color: rgba(40, 84, 92, 0.6862745098);
+    transition: all ease-in-out 0.5s;
+    opacity: 0;
   }
 }
 @keyframes floating {

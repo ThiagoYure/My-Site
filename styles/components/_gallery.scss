@@ -1,0 +1,61 @@
+.gallerySection {
+    margin-top: 3rem;
+
+    h2 {
+        color: #fff;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-decoration: none;
+
+    .itemProject {
+        margin-top: 2rem;
+        border-radius: 1rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .projectCaption {
+        color: #fff;
+        width: 100%;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        background-color: #28545c8c;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .itemProject {
+            width: 45%;
+
+            &:hover {
+                .projectCaption {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .projectCaption {
+            background-color: #28545caf;
+            transition: all ease-in-out 0.5s;
+            opacity: 0;
+        }
+    }
+}

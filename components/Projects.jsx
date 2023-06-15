@@ -1,12 +1,12 @@
 import { projects } from "../public/lists/items"
-import Carousel from "./Carousel"
+import Gallery from "./Gallery"
 
 export default function Projects() {
     return (
         <section id="projectsSection">
             {projects.map((project, index) => {
                 return(
-                    <Carousel key={project.name} item={project} index={index} length={project.list.length}/>
+                    <Gallery key={project.name} item={project}/>
                 )
             })}
         </section>

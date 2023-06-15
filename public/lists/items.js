@@ -100,7 +100,7 @@ export const projects = [
                 link: "https://www.instagram.com/p/B0oMfV9hsO4/"
             },
             {
-                name: "Kid Bu de Dragon Ball",
+                name: "Majin Bu de Dragon Ball",
                 image: "/images/projects/Majinbu.png",
                 link: "https://www.instagram.com/p/B1JHW02hHiu/"
             },

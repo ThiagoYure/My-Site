@@ -1,4 +1,4 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faArrowAltCircleUp, faBars, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ export default function HeaderCustom() {
     }
 
     return (
-        <header>
+        <header id="header">
             <img id="logoHeader" src="/images/logo.png" alt="Logo profissional de Thiago Yure" />
             <div id="menuTrigger" onClick={handleMenuMobile}>
                 <FontAwesomeIcon icon={faBars} />
@@ -55,6 +55,9 @@ export default function HeaderCustom() {
                     <div className="triangle"></div>
                 </a>
             </div>
+            <a className="toTopLink" href="#header">
+                <FontAwesomeIcon icon={faChevronUp} />
+            </a>
         </header>
     )
 }
