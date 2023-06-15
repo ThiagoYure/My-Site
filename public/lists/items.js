@@ -31,18 +31,18 @@ export const projects = [
         list: [
             {
                 name: "Site do Anima CZ",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/AnimaCZ.png",
+                link: "https://animacz.com.br/ "
             },
             {
                 name: "Pokedéx responsiva",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Pokedex.png",
+                link: "https://www.linkedin.com/posts/thiagoyure_reactjs-css-html-activity-6908046234813370368-vCt_?utm_source=share&utm_medium=member_desktop"
             },
             {
                 name: "Mockup página inicial da Netflix",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Netflix.png",
+                link: "https://www.linkedin.com/posts/thiagoyure_programacao-javascript-css-activity-6908044091788255232-jIjD?utm_source=share&utm_medium=member_desktop"
             },
         ]
     },
@@ -51,24 +51,19 @@ export const projects = [
         list: [
             {
                 name: "Redesign mockup logo da Ferrari",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Ferrari.png",
+                link: "https://www.behance.net/gallery/164597387/Redesign-mockup-logo-Ferrari"
             },
             {
                 name: "Redesign mockup camiseta da Loud",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Loud.png",
+                link: "https://www.instagram.com/p/Cr3-Tb1Oktl/"
             },
             {
                 name: "Redesign mockup logo da Google",
-                image: "/images/logo.png",
-                link: ""
-            },
-            {
-                name: "Redesign mockup logo da Googl",
-                image: "/images/logo.png",
-                link: ""
-            },
+                image: "/images/projects/Google.png",
+                link: "https://www.instagram.com/p/CImAtfEjODf/"
+            }
         ]
     },
     {
@@ -76,38 +71,38 @@ export const projects = [
         list: [
             {
                 name: "Miguel O'Hara(Spider-man 2099)",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Spiderman.png",
+                link: "https://www.instagram.com/p/CrJj68LOGaj/"
             },
             {
                 name: "Redhood",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Redhood.png",
+                link: "https://www.instagram.com/p/CIBxQtPjMik/"
             },
             {
                 name: "Megaman",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Megaman.png",
+                link: "https://www.instagram.com/p/CaM17XjucPj/"
             },
             {
                 name: "Sett do League of Legends",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Sett.png",
+                link: "https://www.instagram.com/p/CJeXogHDyoY/"
             },
             {
                 name: "Hailee Williams do Paramore",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Paramore.png",
+                link: "https://www.instagram.com/p/CEUTrx7Dufr/"
             },
             {
                 name: "Ash Ketchum de Pokemon",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Ash.png",
+                link: "https://www.instagram.com/p/B0oMfV9hsO4/"
             },
             {
                 name: "Kid Bu de Dragon Ball",
-                image: "/images/logo.png",
-                link: ""
+                image: "/images/projects/Majinbu.png",
+                link: "https://www.instagram.com/p/B1JHW02hHiu/"
             },
         ]
     },
