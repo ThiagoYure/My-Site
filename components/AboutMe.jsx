@@ -13,7 +13,7 @@ export default function AboutMe() {
                     competências estejam alinhadas para abraçar qualquer oportunidade que se apresente.
                     Não há nada que não possa ser aprendido.
                 </p>
-                <a href="/Currículum Vitae - Thiago Yure.pdf" alt="Link para o curriculo" target="_blank">
+                <a href="/Currículum Vitae - Thiago Yure.pdf" alt="Link para o curriculo" target="_blank" rel="noreferrer">
                     Currículo
                 </a>
             </div>

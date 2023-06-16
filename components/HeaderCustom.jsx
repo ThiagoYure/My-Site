@@ -26,36 +26,36 @@ export default function HeaderCustom() {
             </div>
             <div id="menuMobile" className="inactiveMenu">
                 <h3>_Menu</h3>
-                <a href="#homeSection" className="menuItemMobile">Inicial</a>
-                <a href="#skillsSection" className="menuItemMobile">Habilidades</a>
-                <a href="#aboutMeSection" className="menuItemMobile">Sobre mim</a>
-                <a href="#projectsSection" className="menuItemMobile">Projetos</a>
-                <a href="#contactMeSection" className="menuItemMobile">Contato</a>
+                <a href="#homeSection" rel="tag" className="menuItemMobile">Inicial</a>
+                <a href="#skillsSection" rel="tag" className="menuItemMobile">Habilidades</a>
+                <a href="#aboutMeSection" rel="tag" className="menuItemMobile">Sobre mim</a>
+                <a href="#projectsSection" rel="tag" className="menuItemMobile">Projetos</a>
+                <a href="#contactMeSection" rel="tag" className="menuItemMobile">Contato</a>
             </div>
             <div id="menu">
                 <div id="navBar"></div>
-                <a href="#homeSection" className="menuItem">
+                <a href="#homeSection" rel="tag" className="menuItem">
                     <span className="linkText caption">Inicial</span>
                     <div className="triangle"></div>
                 </a>
-                <a href="#skillsSection" className="menuItem">
+                <a href="#skillsSection" rel="tag" className="menuItem">
                     <span className="linkText caption">Habilidades</span>
                     <div className="triangle"></div>
                 </a>
-                <a href="#aboutMeSection" className="menuItem">
+                <a href="#aboutMeSection" rel="tag" className="menuItem">
                     <span className="linkText caption">Sobre mim</span>
                     <div className="triangle"></div>
                 </a>
-                <a href="#projectsSection" className="menuItem">
+                <a href="#projectsSection" rel="tag" className="menuItem">
                     <span className="linkText caption">Projetos</span>
                     <div className="triangle"></div>
                 </a>
-                <a href="#contactMeSection" className="menuItem">
+                <a href="#contactMeSection" rel="tag" className="menuItem">
                     <span className="linkText caption">Contato</span>
                     <div className="triangle"></div>
                 </a>
             </div>
-            <a className="toTopLink" href="#header">
+            <a className="toTopLink" rel="tag" href="#header">
                 <FontAwesomeIcon icon={faChevronUp} />
             </a>
         </header>
