@@ -8,6 +8,7 @@ export default function Layout({ children }) {
             <Head>
                 <title>Thiago Yure - Portfólio artístico</title>
                 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+                <meta name="author" content="Thiago Yure"/>
                 <meta name="description" content="Aqui você encontra informações sobre mim e interage 
                 com um site criado 100% por mim. Desde o design, a arte e a programação. "/>
                 <meta charSet="UTF-8"/>
