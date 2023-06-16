@@ -1,0 +1,124 @@
+#contactMeSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    #buttonsGroup {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 90%;
+        justify-content: space-evenly;
+        font-size: 1rem;
+
+        #btSim {
+            color: $blue;
+            text-decoration: none;
+            padding: 0.5rem 3rem;
+            border: 0.2rem solid $blue;
+            border-radius: 0.5rem;
+        }
+
+        #btTalvez {
+            color: #8a9eb1;
+            text-decoration: none;
+            padding: 0.1rem 1rem;
+            border: 0.2rem solid #8a9eb1;
+            border-radius: 0.5rem;
+        }
+    }
+
+    address {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-style: normal;
+        margin-bottom: 1rem;
+        min-width: 40%;
+        text-decoration: none;
+
+        p {
+            color: #fff;
+        }
+
+        .contactName {
+            color: $blue;
+        }
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        background-color: #fff;
+        width: 3.5rem;
+        height: 3.5rem;
+        box-sizing: border-box;
+        font-size: 2rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        animation: floating 2s ease-in-out infinite alternate;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #contactMeSection {
+        margin-top: 10vh;
+
+        #buttonsGroup {
+            width: 40%;
+
+            #btSim {
+                transition: all ease-in-out 0.3s;
+
+                &:hover {
+                    background-color: $blue;
+                    color: #fff;
+                }
+            }
+
+            #btTalvez {
+                transition: all ease-in-out 0.3s;
+
+                &:hover {
+                    background-color: #8a9eb1;
+                    color: #fff;
+                }
+            }
+        }
+
+        .contact {
+            justify-content: space-around;
+            min-width: auto;
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+}

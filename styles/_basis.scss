@@ -1,38 +1,115 @@
 * {
-    box-sizing: border-box;
-}
-
-@-ms-viewport {
-    width: device-width;
-}
-
-body {
-    background: $primary-color;
-    overflow-x: hidden;
+    font-family: "5Muta Sans";
     margin: 0;
     padding: 0;
 }
 
-div {
-    margin: 0;
+/**, *::before, *::after {
+    box-sizing: border-box;
+}*/
+
+html,
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("/images/background-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 102%;
+}
+
+main {
+    padding: 20% 10% 5% 10%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
 
 h1 {
-    font-size: 3rem;
-    font-family: $title-font;
+    font-size: 2.4rem;
 }
 
 h2 {
-    font-size: 1.4rem;
-    font-family: $title-font;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.2rem;
-    font-family: $title-font;
+    font-size: 1.5rem;
 }
 
 p {
     font-size: 1rem;
-    font-family: $regular-text-font;
+}
+
+.caption {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        padding: 0 17% 5% 17%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .caption {
+        font-size: 0.8rem;
+    }
+
+    body {
+        background-image: url("/images/background.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: 102%;
+    }
 }

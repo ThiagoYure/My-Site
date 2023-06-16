@@ -1,0 +1,55 @@
+#aboutMeSection {
+    text-align: center;
+    margin-top: 3rem;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+
+    img {
+        width: 100%;
+        margin-top: 1rem;
+        animation: floating 1s ease-in-out infinite alternate;
+    }
+
+    a {
+        display: inline-block;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        color: $blue;
+        border: 0.2rem solid $blue;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #aboutMeSection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .aboutMeInfo {
+            width: 50%;
+            text-align: start;
+            line-height: 1.5;
+        }
+
+        img {
+            width: 40%;
+        }
+
+        a {
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+    }
+}

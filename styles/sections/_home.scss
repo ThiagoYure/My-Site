@@ -1,0 +1,69 @@
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-2vh);
+    }
+}
+
+#homeSection {
+    text-align: center;
+    padding-top: 1.5rem;
+
+    h1 {
+        line-height: normal;
+        color: #fff;
+
+        #nome {
+            background: -webkit-linear-gradient(#514FB5, #33E0FF);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    h3 {
+        margin-top: 1rem;
+        line-height: normal;
+        color: #fff;
+        padding: 0rem 3rem;
+    }
+
+    div {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.animatedText {
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+
+    #homeSection {
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        h3 {
+            padding: 0;
+        }
+
+        #fotoPerfil {
+            width: 80%;
+        }
+    }
+
+    .animatedText {
+        text-align: left;
+    }
+}
