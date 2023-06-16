@@ -97,6 +97,13 @@ p {
   .caption {
     font-size: 0.8rem;
   }
+  body {
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 102%;
+  }
 }
 @font-face {
   font-family: "5Muta Sans";
@@ -330,12 +337,17 @@ header {
     background-size: cover;
     border-radius: 50%;
     color: #fff;
-    box-shadow: 0 0 0.5rem 1px #242527;
+    box-shadow: 0 0 1rem 0 #000;
     z-index: 3;
     box-sizing: border-box;
     height: 4rem;
     width: 4rem;
     text-align: center;
+    transition: all ease-in-out 0.2s;
+    scale: 1;
+  }
+  .toTopLink:hover {
+    scale: 1.1;
   }
 }
 footer {
@@ -588,6 +600,7 @@ footer em {
   #fighterDescriptionPanel {
     padding: 2rem 3rem;
     width: 40%;
+    min-height: 70vh;
   }
 }
 #aboutMeSection {
@@ -623,12 +636,19 @@ footer em {
     justify-content: space-around;
   }
   #aboutMeSection .aboutMeInfo {
-    width: 40%;
+    width: 50%;
     text-align: start;
     line-height: 1.5;
   }
   #aboutMeSection img {
-    width: 50%;
+    width: 40%;
+  }
+  #aboutMeSection a {
+    transition: all ease-in-out 0.3s;
+  }
+  #aboutMeSection a:hover {
+    background-color: #14b9d6;
+    color: #fff;
   }
 }
 #projectsSection {
@@ -723,6 +743,20 @@ footer em {
   }
   #contactMeSection #buttonsGroup {
     width: 40%;
+  }
+  #contactMeSection #buttonsGroup #btSim {
+    transition: all ease-in-out 0.3s;
+  }
+  #contactMeSection #buttonsGroup #btSim:hover {
+    background-color: #14b9d6;
+    color: #fff;
+  }
+  #contactMeSection #buttonsGroup #btTalvez {
+    transition: all ease-in-out 0.3s;
+  }
+  #contactMeSection #buttonsGroup #btTalvez:hover {
+    background-color: #8a9eb1;
+    color: #fff;
   }
   #contactMeSection .contact {
     justify-content: space-around;

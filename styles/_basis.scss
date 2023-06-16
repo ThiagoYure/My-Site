@@ -104,4 +104,12 @@ p {
     .caption {
         font-size: 0.8rem;
     }
+
+    body {
+        background-image: url("/images/background.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: 102%;
+    }
 }

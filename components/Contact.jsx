@@ -6,8 +6,8 @@ export default function Contact() {
         <section id="contactMeSection">
             <h2>_Vamos conversar?</h2>
             <div id="buttonsGroup">
-                <a id="btTalvez" href="#" alt="">Talvez...</a>
-                <a id="btSim" href="#" alt="">Sim!</a>
+                <a id="btTalvez" href="https://www.instagram.com/siegfrieddragon/" alt="" target="_blank">Talvez...</a>
+                <a id="btSim" href="https://www.linkedin.com/in/thiagoyure/" alt="" target="_blank">Sim!</a>
             </div>
             <img src="/images/contact-me-art.png" />
             <address>

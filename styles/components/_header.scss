@@ -241,11 +241,17 @@ header {
         background-size: cover;
         border-radius: 50%;
         color: #fff;
-        box-shadow: 0 0 0.5rem 1px #242527;
+        box-shadow: 0 0 1rem 0 #000;
         z-index: 3;
         box-sizing: border-box;
         height: 4rem;
         width: 4rem;
         text-align: center;
+        transition: all ease-in-out 0.2s;
+        scale: 1;
+
+        &:hover {
+            scale: 1.1;
+        }
     }
 }

@@ -32,15 +32,24 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-    
+
         .aboutMeInfo {
-            width: 40%;
+            width: 50%;
             text-align: start;
             line-height: 1.5;
         }
 
         img {
-            width: 50%;
+            width: 40%;
+        }
+
+        a {
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+            }
         }
     }
 }

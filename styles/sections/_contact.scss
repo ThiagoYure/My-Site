@@ -88,18 +88,35 @@
 
 @media screen and (min-width: 992px) {
     #contactMeSection {
-
         margin-top: 10vh;
-    
+
         #buttonsGroup {
             width: 40%;
+
+            #btSim {
+                transition: all ease-in-out 0.3s;
+
+                &:hover {
+                    background-color: $blue;
+                    color: #fff;
+                }
+            }
+
+            #btTalvez {
+                transition: all ease-in-out 0.3s;
+
+                &:hover {
+                    background-color: #8a9eb1;
+                    color: #fff;
+                }
+            }
         }
-    
+
         .contact {
             justify-content: space-around;
             min-width: auto;
         }
-    
+
         img {
             width: 50%;
         }

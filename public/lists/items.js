@@ -2,26 +2,28 @@ export const fighters = [
     {
         name: "Dev Front-end",
         image: "/images/fighter-art-3.png",
-        description: `Free look survival game end user Xbox 360 co-op AFK
-        respawn NPC isometric view spoiler quicksave Bullet Hell.
-        God Mode PvE gamer triple jump permadeath One-shot-kill Tetris
-        The Sims horde mode BioShock PlayStation texture mapping.`
+        description: `Um desenvolvedor criativo, comunicativo e com grande capacidade de
+        resolução de problemas. Estou sempre disposto a aprender algo novo e melhorar o que já sei.
+        Devido a minha formação, tenho uma boa noção de todas as etapas do desenvolvimento
+        e consigo interagir com equipes de qualquer uma delas. Atualmente tenho mais familiaridade
+        com tecnologias como Javascript, ReactJS, NextJS, Angular, NodeJS, React Native, CSS e afins.`
     },
     {
         name: "Designer",
         image: "/images/fighter-art-2.png",
-        description: `Free look survival game end user Xbox 360 co-op AFK
-        respawn NPC isometric view spoiler quicksave Bullet Hell.
-        God Mode PvE gamer triple jump permadeath One-shot-kill Tetris
-        The Sims horde mode BioShock PlayStation texture mapping.`
+        description: `Sou designer a mais de 3 anos e nesse tempo evolui muito a minha percepção e criatividade
+        , tendo a boa comuniação como diferencial.
+        Trabalhei por 10 meses como designer CLT em uma agência de marketing. Desde então venho desenvolvendo
+        trabalhos como freelancer na área, desenvolvendo logos, projetos independentes e afins. Trabalho
+        principalmente com Corel Draw, Photoshop e Figma.`
     },
     {
         name: "Ilustrador",
         image: "/images/fighter-art-1.png",
-        description: `Free look survival game end user Xbox 360 co-op AFK
-        respawn NPC isometric view spoiler quicksave Bullet Hell.
-        God Mode PvE gamer triple jump permadeath One-shot-kill Tetris
-        The Sims horde mode BioShock PlayStation texture mapping.`
+        description: `Sou apaixonado por desenho e ilustração desde criança e a mais de 3 anos venho
+        atuando como ilustrador freelancer. Já atuei como concept artist em projetos, criei artes para
+        mídias e mascotes, ilustrei para livros infantis e diversas outras coisas. A qualidade do meu
+        trabalho está em connstante evolução e cada vez mais imprimo minha personalidade na minha arte.`
     }
 ];
 
