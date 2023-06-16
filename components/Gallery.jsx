@@ -8,7 +8,7 @@ export default function Gallery({ item }) {
             <div className="gallery">
                 {item.list.map((project, index) => {
                     return (
-                        <a className="itemProject" key={project.name} href={project.link} target="_blank">
+                        <a className="itemProject" key={project.name} href={project.link} target="_blank" rel="noreferrer">
                             <img src={project.image} alt={"Projeto " + project.name} />
                             <span className="projectCaption">
                                 {project.name}
