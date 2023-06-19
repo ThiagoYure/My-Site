@@ -2,26 +2,36 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: > 0%
 */
 
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
+            -webkit-flex-direction: row;
+               -moz-box-orient: horizontal;
+               -moz-box-direction: normal;
             flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
             justify-content: center;
     padding: 5% 10%;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+         box-sizing: border-box;
     text-align: center;
     width: 100%;
     color: #fff;

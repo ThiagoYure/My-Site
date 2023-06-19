@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 0%
+*/
 * {
   font-family: "5Muta Sans";
   margin: 0;
@@ -20,9 +26,11 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: url("/images/background-mobile.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
+  background-origin: left top;
   background-attachment: fixed;
-  background-size: 102%;
+  background-size: cover;
+  background-color: #000;
 }
 
 main {
@@ -100,9 +108,11 @@ p {
   body {
     background-image: url("/images/background.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
+    background-origin: left top;
     background-attachment: fixed;
-    background-size: 102%;
+    background-size: cover;
+    background-color: #000;
   }
 }
 @font-face {
@@ -113,7 +123,7 @@ p {
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: > 0%
 */
 @keyframes menuEntrance {
   0% {
@@ -360,7 +370,7 @@ header {
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: > 0%
 */
 footer {
   display: flex;
@@ -377,6 +387,12 @@ footer em {
   color: #14b9d6;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 0%
+*/
 .gallerySection {
   margin-top: 3rem;
 }
@@ -434,7 +450,7 @@ footer em {
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: > 0%
 */
 @keyframes floating {
   0% {
@@ -495,6 +511,12 @@ footer em {
     text-align: left;
   }
 }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 0%
+*/
 #skillsSection {
   text-align: center;
   margin-top: 1rem;
@@ -625,7 +647,7 @@ footer em {
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: > 0%
 */
 #aboutMeSection {
   text-align: center;
@@ -687,7 +709,7 @@ footer em {
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: > 0%
 */
 #contactMeSection {
   display: flex;

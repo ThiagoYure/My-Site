@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 0%
+*/
+
 .gallerySection {
     margin-top: 3rem;
 
@@ -7,16 +14,34 @@
 }
 
 .gallery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     width: 100%;
     text-decoration: none;
 
     .itemProject {
         margin-top: 2rem;
-        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+           -moz-border-radius: 1rem;
+                border-radius: 1rem;
         overflow-x: hidden;
         overflow-y: hidden;
         position: relative;
@@ -26,7 +51,9 @@
         color: #fff;
         width: 100%;
         padding: 1rem 0;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
         position: absolute;
         bottom: 0;
         background-color: #28545c8c;
@@ -36,11 +63,31 @@
 
 @media screen and (min-width: 992px) {
     .gallery {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+           -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         .itemProject {
             width: 45%;
@@ -54,6 +101,9 @@
 
         .projectCaption {
             background-color: #28545caf;
+            -webkit-transition: all ease-in-out 0.5s;
+            -o-transition: all ease-in-out 0.5s;
+            -moz-transition: all ease-in-out 0.5s;
             transition: all ease-in-out 0.5s;
             opacity: 0;
         }

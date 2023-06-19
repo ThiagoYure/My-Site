@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 0%
+*/
+
 * {
     font-family: "5Muta Sans";
     margin: 0;
@@ -21,9 +28,13 @@ body {
     -webkit-font-smoothing: antialiased;
     background-image: url("/images/background-mobile.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
+    -moz-background-origin: left top;
+         background-origin: left top;
     background-attachment: fixed;
-    background-size: 102%;
+    -moz-background-size: cover;
+         background-size: cover;
+    background-color: #000;
 }
 
 main {
@@ -108,8 +119,13 @@ p {
     body {
         background-image: url("/images/background.png");
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: center top;
+        -moz-background-origin: left top;
+             background-origin: left top;
         background-attachment: fixed;
-        background-size: 102%;
+        -moz-background-size: cover;
+             background-size: cover;
+        background-color: #000;
     }
 }
+
