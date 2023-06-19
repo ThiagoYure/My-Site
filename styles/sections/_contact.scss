@@ -1,10 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 #contactMeSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     margin-top: 3rem;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #fff;
 
     h2 {
@@ -12,12 +28,22 @@
     }
 
     #buttonsGroup {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 90%;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         font-size: 1rem;
 
         #btSim {
@@ -38,20 +64,39 @@
     }
 
     address {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         width: 100%;
         margin-top: 2rem;
     }
 
     .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
         font-style: normal;
         margin-bottom: 1rem;
@@ -68,21 +113,29 @@
     }
 
     .icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         color: #000;
         background-color: #fff;
         width: 3.5rem;
         height: 3.5rem;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         font-size: 2rem;
         border-radius: 50%;
         margin-bottom: 1rem;
     }
 
     img {
-        animation: floating 2s ease-in-out infinite alternate;
+        -webkit-animation: floating 2s ease-in-out infinite alternate;
+                animation: floating 2s ease-in-out infinite alternate;
     }
 }
 
@@ -94,6 +147,8 @@
             width: 40%;
 
             #btSim {
+                -webkit-transition: all ease-in-out 0.3s;
+                -o-transition: all ease-in-out 0.3s;
                 transition: all ease-in-out 0.3s;
 
                 &:hover {
@@ -103,6 +158,8 @@
             }
 
             #btTalvez {
+                -webkit-transition: all ease-in-out 0.3s;
+                -o-transition: all ease-in-out 0.3s;
                 transition: all ease-in-out 0.3s;
 
                 &:hover {
@@ -113,7 +170,8 @@
         }
 
         .contact {
-            justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
             min-width: auto;
         }
 

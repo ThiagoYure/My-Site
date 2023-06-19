@@ -1,14 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 #aboutMeSection {
     text-align: center;
     margin-top: 3rem;
     color: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
 
     img {
         width: 100%;
         margin-top: 1rem;
-        animation: floating 1s ease-in-out infinite alternate;
+        -webkit-animation: floating 1s ease-in-out infinite alternate;
+                animation: floating 1s ease-in-out infinite alternate;
     }
 
     a {
@@ -28,10 +37,18 @@
 
 @media screen and (min-width: 992px) {
     #aboutMeSection {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
         .aboutMeInfo {
             width: 50%;
@@ -44,6 +61,8 @@
         }
 
         a {
+            -webkit-transition: all ease-in-out 0.3s;
+            -o-transition: all ease-in-out 0.3s;
             transition: all ease-in-out 0.3s;
 
             &:hover {

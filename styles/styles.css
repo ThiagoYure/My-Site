@@ -77,7 +77,7 @@ p {
 
 @media screen and (min-width: 992px) {
   main {
-    padding: 0 17% 5% 17%;
+    padding: 0 12% 5% 12%;
   }
   h1 {
     font-size: 2.8rem;
@@ -109,6 +109,12 @@ p {
   font-family: "5Muta Sans";
   src: url("/fonts/5muta_sans.ttf") format("truetype");
 }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @keyframes menuEntrance {
   0% {
     width: 0vw;
@@ -286,7 +292,7 @@ header {
     width: 0;
     height: 0;
     -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-            clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
     background-color: #14b9d6;
     width: 0.8rem;
     height: 0.8rem;
@@ -350,6 +356,12 @@ header {
     scale: 1.1;
   }
 }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 footer {
   display: flex;
   flex-direction: row;
@@ -418,6 +430,12 @@ footer em {
     opacity: 0;
   }
 }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @keyframes floating {
   0% {
     transform: translateY(0);
@@ -591,7 +609,7 @@ footer em {
     overflow-x: hidden;
   }
   #carouselPanel img {
-    width: 33vw;
+    width: 38vw;
   }
   #carouselButtons div {
     width: 5vw;
@@ -603,6 +621,12 @@ footer em {
     min-height: 70vh;
   }
 }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 #aboutMeSection {
   text-align: center;
   margin-top: 3rem;
@@ -659,6 +683,12 @@ footer em {
   margin-bottom: 1.5rem;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 #contactMeSection {
   display: flex;
   flex-direction: column;

@@ -1,9 +1,29 @@
-@keyframes floating {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes floating {
     0% {
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
     100% {
-        transform: translateY(-2vh);
+        -webkit-transform: translateY(-2vh);
+                transform: translateY(-2vh);
+    }
+}
+
+@keyframes floating {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-2vh);
+                transform: translateY(-2vh);
     }
 }
 
@@ -49,10 +69,18 @@
 
     #homeSection {
         padding-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
         h3 {
             padding: 0;
