@@ -31,6 +31,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-color: #000;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 main {
@@ -207,7 +209,7 @@ header {
   font-size: 1.6rem;
   height: 12vw;
   width: 12vw;
-  background-image: linear-gradient(to top right, #514FB5, #33E0FF);
+  background-image: linear-gradient(to top right, #33E0FF 0%, #514FB5 80%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 0 0 5px 1px #242527;
@@ -216,11 +218,11 @@ header {
 }
 
 #nome {
-  color: linear-gradient(to top right, #514FB5, #33E0FF);
+  color: linear-gradient(to top right, #33E0FF 0%, #514FB5 80%);
 }
 
 #menuMobile {
-  background-image: linear-gradient(to top right, #514FB5, #33E0FF);
+  background-image: linear-gradient(to top right, #33E0FF 0%, #514FB5 80%);
   box-shadow: 0 0 5px 1px #242527;
   flex-direction: column;
   width: 0vw;
@@ -274,7 +276,7 @@ header {
     width: 100%;
     height: 0.6rem;
     border-radius: 2rem;
-    background-image: linear-gradient(to top right, #514FB5, #33E0FF);
+    background-image: linear-gradient(to top right, #33E0FF 0%, #514FB5 80%);
     background-size: cover;
     position: absolute;
     box-shadow: 0 0 0.5rem 1px #242527;
@@ -349,7 +351,7 @@ header {
     bottom: 3rem;
     right: 3rem;
     font-size: 2rem;
-    background-image: linear-gradient(to top right, #514FB5, #33E0FF);
+    background-image: linear-gradient(to top right, #33E0FF 0%, #514FB5 80%);
     background-size: cover;
     border-radius: 50%;
     color: #fff;
@@ -469,7 +471,7 @@ footer em {
   color: #fff;
 }
 #homeSection h1 #nome {
-  background: -webkit-linear-gradient(#514FB5, #33E0FF);
+  background: -webkit-linear-gradient(#33E0FF, #514FB5);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -526,7 +528,7 @@ footer em {
   color: #fff;
 }
 #skillsSection h2 b {
-  background: -webkit-linear-gradient(#514fb5, #33e0ff);
+  background: -webkit-linear-gradient(#33E0FF, #514FB5);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -603,7 +605,7 @@ footer em {
 
 #fighterDescriptionPanel {
   width: 100%;
-  background-image: linear-gradient(to top right, #514FB5, #33E0FF);
+  background-image: linear-gradient(to top right, #33E0FF 0%, #514FB5 80%);
   margin-top: 2rem;
   border-radius: 1rem;
   padding: 0.5rem 1.5rem 1.5rem 1.5rem;
@@ -619,6 +621,16 @@ footer em {
 }
 #fighterDescriptionPanel .active {
   display: block;
+}
+
+.inactiveButtonRight {
+  cursor: auto;
+  background-image: url("/images/button-right-disabled.png");
+}
+
+.inactiveButtonLeft {
+  cursor: auto;
+  background-image: url("/images/button-left-disabled.png");
 }
 
 @media screen and (min-width: 992px) {

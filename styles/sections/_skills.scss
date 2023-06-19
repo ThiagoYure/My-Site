@@ -14,7 +14,7 @@
         color: #fff;
 
         b {
-            background: -webkit-linear-gradient(#514fb5, #33e0ff);
+            background: -webkit-linear-gradient(#33E0FF,#514FB5);
             background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -212,6 +212,16 @@
     .active {
         display: block;
     }
+}
+
+.inactiveButtonRight {
+    cursor: auto;
+    background-image: url("/images/button-right-disabled.png");
+}
+
+.inactiveButtonLeft {
+    cursor: auto;
+    background-image: url("/images/button-left-disabled.png");
 }
 
 @media screen and (min-width: 992px) {
