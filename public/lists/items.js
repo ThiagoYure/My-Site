@@ -82,6 +82,21 @@ export const projects = [
                 link: "https://www.instagram.com/p/CIBxQtPjMik/"
             },
             {
+                name: "Freelance de ilustração de Viking",
+                image: "/images/projects/Viking.png",
+                link: "https://www.instagram.com/p/Cc3F5WWuUhD/"
+            },
+            {
+                name: "Freelance de ilustração de Personagem de RPG",
+                image: "/images/projects/Asterius.png",
+                link: "https://www.instagram.com/p/CZeye5dOain/"
+            },
+            {
+                name: "Freelance de ilustração de livro infantil",
+                image: "/images/projects/Livro-Fernando.png",
+                link: "https://www.instagram.com/p/CtzRzDGu2wC/"
+            },
+            {
                 name: "Megaman",
                 image: "/images/projects/Megaman.png",
                 link: "https://www.instagram.com/p/CaM17XjucPj/"
